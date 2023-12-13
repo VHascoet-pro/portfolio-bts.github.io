@@ -7,7 +7,7 @@ la 3D dans le monde de l'informatique, ce moteur à _UNE SEULE_ particularité, 
 à été conçu intégralement autour d'un processeur : Le tout premier Intel Pentium
 . 
 
-{{<figure src="https://azrael-iii.github.io/portfolio.github.io/pics/pentium.webp" alt="Pentium_1_pics" position="center" style="border-radius: 8px;" caption="L'un des premiers Intel Pentium" captionPosition="right" captionStyle="color: black;" >}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio.github.io/pics/pentium.webp" alt="Pentium_1_pics" position="center" style="border-radius: 8px;" caption="L'un des premiers Intel Pentium" captionPosition="right" captionStyle="color: black;" >}}
 
 Ce moteur permet d'utiliser des modèles 3D pour les personnages, les effets
 visuels et pour les éclairages.
@@ -17,12 +17,12 @@ du joueur et sur le nombres d'images par secondes du jeu, il s'agit d'une
 physique _pré-déterminée_, dû aux limitations du moteur de jeu, il n'est pas
 possible d'y intégrer plus de 64 ennemis à la fois dans un seul niveau, le 
 code-source étant basé en **C++**, il est très
-bien documenté, car, comme-dit sur la page dédiée au développeur [_John Carmack_](https://azrael-iii.github.io/portfolio.github.io/carmack),
+bien documenté, car, comme-dit sur la page dédiée au développeur [_John Carmack_](https://vhascoet-pro.github.io/portfolio.github.io/carmack),
 il est l'un des acteurs majeurs du code libre (Open Source), il à mis le
 code-source en ligne en Juillet 1998 (le moteur est sorti en 1997, en même temps
 que le jeu Quake).
 
-{{<figure src="https://azrael-iii.github.io/portfolio.github.io/pics/quake.webp" alt="E1M1_quake" position="center" style="border-radius: 8px;" caption="Carte 1 - Episode 1 de Quake (E1M1)" captionPosition="right" captionStyle="color: black;" >}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio.github.io/pics/quake.webp" alt="E1M1_quake" position="center" style="border-radius: 8px;" caption="Carte 1 - Episode 1 de Quake (E1M1)" captionPosition="right" captionStyle="color: black;" >}}
 
 On peut déjà voir une améioration des graphismes, on à finalement des textures
 sur chaque modèle 3D, et utilise la technologie OpenGL afin de toujours rester
@@ -48,10 +48,10 @@ secteurs, et ces secteurs vont être simplement analysés en temps réel, ce qui
 permettre à un ordinateur de visualiser un niveau (ou une scène 3D) très vaste,
 en temps réel.
 
-![Photo BSP1](https://azrael-iii.github.io/portfolio.github.io/pics/BSP.png)
+![Photo BSP1](https://vhascoet-pro.github.io/portfolio.github.io/pics/BSP.png)
 
 _Ici une scène 3D sectorisée via le BSP_
-![Photo BSP3D](https://azrael-iii.github.io/portfolio.github.io/pics/3dtree.png)
+![Photo BSP3D](https://vhascoet-pro.github.io/portfolio.github.io/pics/3dtree.png)
 
 ***
 # Introduction au BSP
@@ -98,7 +98,7 @@ Dans l'arbre, les "nœuds" de l'arbre BSP sont dans des cercles, et les listes
 d'objets devant ou derrière seront dans des rectangles arrondis. Le côté avant
 de chaque segment sera indiqué par une flèche.
 
-![Photo BSP2](https://azrael-iii.github.io/portfolio.github.io/pics/BSP_steps/BSP_step1.png)
+![Photo BSP2](https://vhascoet-pro.github.io/portfolio.github.io/pics/BSP_steps/BSP_step1.png)
 ***
 # Étape 2
 Nous appliquons l'algorithme présenté ci-dessus :
@@ -111,7 +111,7 @@ de nouveaux segments, {B1, B2, C1, C2, D1, D2}. Certains sont situés devant A,
 1. Nous traitons, de manière récursive, d'abord les segments situés devant A
 (étapes ii–v), puis ceux situés derrière (étapes vi–vii).
 
-![Photo BSP3](https://azrael-iii.github.io/portfolio.github.io/pics/BSP_steps/BSP_step2.png)
+![Photo BSP3](https://vhascoet-pro.github.io/portfolio.github.io/pics/BSP_steps/BSP_step2.png)
 ***
 # Étape 3
 1. Nous considérons les segments situés devant A, {B2, C2, D2}.
@@ -122,7 +122,7 @@ nouveaux segments, {D2, D3}.
 1. Nous séparons les segments situés devant B2, {D2}, et ceux situés derrière,
 {C2, D3}.
 
-![Photo BSP4](https://azrael-iii.github.io/portfolio.github.io/pics/BSP_steps/BSP_step3.png)
+![Photo BSP4](https://vhascoet-pro.github.io/portfolio.github.io/pics/BSP_steps/BSP_step3.png)
 ***
 # Étape 4
 1. Nous considérons les segments situés devant B2. Il n'y a qu'un seul segment,
@@ -130,7 +130,7 @@ D2.
 1. Nous créons donc un nœud enfant de B2 le contenant, il s'agit d'une feuille
 de l'arbre.
 
-![Photo BSP2](https://azrael-iii.github.io/portfolio.github.io/pics/BSP_steps/BSP_step4.png)
+![Photo BSP2](https://vhascoet-pro.github.io/portfolio.github.io/pics/BSP_steps/BSP_step4.png)
 ***
 # Étape 5
 1. Nous considérons maintenant les segments derrière B2, {C2, D3}.
@@ -139,14 +139,14 @@ de B2 que nous créons.
 1. La liste des segments situés devant C2 est {D3}, la liste des segment situés
 derrière est vide.
 
-![Photo BSP5](https://azrael-iii.github.io/portfolio.github.io/pics/BSP_steps/BSP_step5.png)
+![Photo BSP5](https://vhascoet-pro.github.io/portfolio.github.io/pics/BSP_steps/BSP_step5.png)
 ***
 # Étape 6
 1. Nous considérons la liste des segments devant C2.
 1. Le seul segment qu'elle contient, D3, est ajouté au nœud enfant de C2 que
 nous créons.
 
-![Photo BSP6](https://azrael-iii.github.io/portfolio.github.io/pics/BSP_steps/BSP_step6.png)
+![Photo BSP6](https://vhascoet-pro.github.io/portfolio.github.io/pics/BSP_steps/BSP_step6.png)
 ***
 # Étape 7
 1. Nous avons traité tous les segments situés devant A
@@ -156,14 +156,14 @@ enfant de A que nous créons.
 1. Nous séparons les segments en deux listes : les segments situés devant B1,
 {D1}, et ceux situés derrière, {C1}.
 
-![Photo BSP7](https://azrael-iii.github.io/portfolio.github.io/pics/BSP_steps/BSP_step7.png)
+![Photo BSP7](https://vhascoet-pro.github.io/portfolio.github.io/pics/BSP_steps/BSP_step7.png)
 ***
 # Étape 8
 1. Nous traitons les segments situés devant B1.
 1. Il n'y a qu'un seul segment, D1, nous créons donc un nœud enfant de B1 pour
 l'y mettre.
 
-![Photo BSP8](https://azrael-iii.github.io/portfolio.github.io/pics/BSP_steps/BSP_step8.png)
+![Photo BSP8](https://vhascoet-pro.github.io/portfolio.github.io/pics/BSP_steps/BSP_step8.png)
 ***
 # Étape 9
 1. Nous traitons les segments situés derrière B1.
@@ -171,7 +171,7 @@ l'y mettre.
 l'y mettre.
 1. L'arbre BSP est **_terminé_**.
 
-![Photo BSP9](https://azrael-iii.github.io/portfolio.github.io/pics/BSP_steps/BSP_step9.png)
+![Photo BSP9](https://vhascoet-pro.github.io/portfolio.github.io/pics/BSP_steps/BSP_step9.png)
 ***
 Cette méthode était très efficace sur des moteurs basé sur la 2D (Doom Engine)
 et sur les premiers moteurs basés sur la 3D (ID Tech Engine 1, 2 Unreal Engine).
@@ -181,9 +181,9 @@ même manière, mais pour chaque pixel d'une scène 3D afin de calculer en temps
 réel la lumière d'une scène en 3D.
 ***
 
-<div align="left"><button onclick="window.location.href='https://azrael-iii.github.io/portfolio.github.io/veille/veille_p2';">< Precédent</button>
-<div align="right"><button onclick="window.location.href='https://azrael-iii.github.io/portfolio.github.io/veille/veille_p4';">Suivant ></button>
+<div align="left"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio.github.io/veille/veille_p2';">< Precédent</button>
+<div align="right"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio.github.io/veille/veille_p4';">Suivant ></button>
 
 
 ***
-[Retour au Profil](https://azrael-iii.github.io/portfolio.github.io/about)
+[Retour au Profil](https://vhascoet-pro.github.io/portfolio.github.io/about)
