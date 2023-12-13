@@ -13,13 +13,13 @@ voxels, des reflets dynamiques.
 
 Voilà la démo technique en question :
 
-{{<video src="https://vhascoet-pro.github.io/portfolio.github.io/vids/UE1_flyby_intro.mp4" height="640" width="640">}}
+{{<video src="https://vhascoet-pro.github.io/portfolio-bts.github.io/vids/UE1_flyby_intro.mp4" height="640" width="640">}}
 
 ## Qu'est-ce qu'un voxel ?
 ***
 
 Un Voxel est, en quelque sorte, un pixel en trois dimensions, en voici un :
-{{<figure src="https://vhascoet-pro.github.io/portfolio.github.io/pics/voxel_example.webp" alt="Exemple de Voxel" position="center" style="border-radius: 8px;" caption="Voici un voxel" captionPosition="right" captionStyle="color: black;" >}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/voxel_example.webp" alt="Exemple de Voxel" position="center" style="border-radius: 8px;" caption="Voici un voxel" captionPosition="right" captionStyle="color: black;" >}}
 
 Il s'agit d'un type de pixel qui permet de générer des scènes en 3D "sans"
 polygônes, cela permettait à une certaine époque, d'avoir des modèles 3D sans
@@ -36,7 +36,7 @@ qui contient toutes les animations d'un seul modèle dans un seul fichier
 des animations lié à un modèle, plutôt que de remodeler chaque modèle pour
 chaque animation ).
 
-{{<figure src="https://vhascoet-pro.github.io/portfolio.github.io/pics/skeleton_bodies.webp" alt="Exemple de Voxel" position="center" style="border-radius: 8px;" caption="Voici un squelette sur Unreal" captionPosition="right" captionStyle="color: black;" >}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/skeleton_bodies.webp" alt="Exemple de Voxel" position="center" style="border-radius: 8px;" caption="Voici un squelette sur Unreal" captionPosition="right" captionStyle="color: black;" >}}
 
 Avoir un système de squelette d'animation permet de créer plus efficacement des
 animations sans avoir à utiliser beaucoup d'espace (comparé à l'ancien système
@@ -46,5 +46,5 @@ vertrices image par image, pour donner une animation plutôt fluide mais qui
 était très mal implémentable avec l'évolution des ordinateurs de l'époque et
 donc, du nombre de vertrices possibles par modèle 3D )
 ***
-<div align="left"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio.github.io/veille/veille_p3';">< Precédent</button></div> 
-<div align="right"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio.github.io/veille/veille_p5';">Suivant ></button></div>
+<div align="left"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p3';">< Precédent</button></div> 
+<div align="right"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p5';">Suivant ></button></div>

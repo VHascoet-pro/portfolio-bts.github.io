@@ -18,10 +18,10 @@ d'entre-eux, du côté technique (comment ils ont été développés et ingéni�
 ainisi que le côté pratique (dans quels domaines ils ont été exploîtés et
 pourquoi).
 
-<div align="center"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio.github.io/veille/veille_p2';">Suivant ></button></div>
+<div align="center"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p2';">Suivant ></button></div>
 
 ***
 
-<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio.github.io/';">Retour à l'accueil</button></div>
+<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/';">Retour à l'accueil</button></div>
 
 ***
