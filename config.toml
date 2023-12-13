@@ -1,3 +1,49 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://vhascoet-pro.github.io/portfolio-bts.github.io/'
+languageCode = 'fr'
+title = 'Portfolio'
+theme = 'terminal'
+
+[[menu.main]]
+  name = "A propos"
+  url = "/about"
+
+[[menu.main]]
+  name = "Veille Technologique"
+  url = "/veille/veille"
+  
+[[menu.footer]]
+  name = "A propos"
+  url = "/about"
+
+[markup.goldmark.renderer]
+  unsafe= true
+
+[params]
+  enableEmoji= true
+  themeColor = "green"
+  fullWidthTheme = true
+  updatedDatePrefix = "Mis à jour"
+  Toc = false
+  TocTitle = "Index"
+  
+[languages]
+  [languages.en]
+    languageName = "Français"
+    title = "Portfolio"
+    subtitle = ""
+    owner = "Vincent Hascoët"
+    keywords = ""
+    copyright = "2023 - Hascoët Vincent"
+    menuMore = "Voir plus"
+    readMore = "Lire plus"
+    readOtherPosts = "Lire d'autres publications"
+    newerPosts = "Publications récentes"
+    olderPosts = "Anciennes publications"
+    missingContentMessage = "Page non trouvée..."
+    missingBackButtonLabel = "Retour à l'accueil"
+    minuteReadingTime = "minutes de lecture"
+    words = "mots"
+
+    [languages.en.params.logo]
+      logoText = "Portfolio"
+      logoHomeLink = "https://azrael-iii.github.io/portfolio.github.io/"
