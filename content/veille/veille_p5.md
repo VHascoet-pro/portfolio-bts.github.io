@@ -49,5 +49,5 @@ kilomètres carrés, ou l'on peut appliquer une seule texture sur l'intégralit�
 des bâtiments de la ville, des routes, des arbres
 
 ***
-<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p4';">< Précédent</button>
-<div align="right"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p6';">Suivant ></button></div>
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p4';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p6';">Suivant</button>|
+|---|---|
