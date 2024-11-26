@@ -37,7 +37,7 @@ theme = 'terminal'
     subtitle = ""
     owner = "Vincent Hascoët"
     keywords = ""
-    copyright = "2023 - Hascoët Vincent"
+    copyright = "(2023 - 2024) - Hascoët Vincent"
     menuMore = "Voir plus"
     readMore = "Lire plus"
     readOtherPosts = "Lire d'autres publications"
@@ -50,4 +50,4 @@ theme = 'terminal'
 
     [languages.en.params.logo]
       logoText = "Portfolio"
-      logoHomeLink = "https://azrael-iii.github.io/portfolio.github.io/"
+      logoHomeLink = "https://vhascoet-pro.github.io/portfolio.github.io/"
