@@ -40,7 +40,7 @@ virtuelles via ESXI).
 ***
 
 |[![CV](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/CV_Vincent_Hascoet.pdf)|[![Lettre de motivation](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/Lettre_de_Motivation_Vincent_Hascoet.pdf)|[![Tableau de synthèse](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/BTS_SIO_-_Tableau_de_synthese_-_Hascoet_Vincent.pdf)|
-|---|---|
+|---|---|---|
 |CV|Lettre de Motivation|
 ***
 ### - Je peux également vous proposer ma _[veille technologique](https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille)_ mais également mon _[Rapport de Stage](https://vhasoet-pro.github.io/portfolio-bts.github.io/RDS/Rapport)_ de ma première année de BTS.
