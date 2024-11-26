@@ -39,7 +39,7 @@ effectué deux grands projets durant l'intégralité de ma période de stage
 virtuelles via ESXI).
 ***
 
-|[![CV](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/CV_Vincent_Hascoet.pdf)|[![Lettre de motivation](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/Lettre_de_Motivation_Vincent_Hascoet.pdf)|
+|[![CV](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/CV_Vincent_Hascoet.pdf)|[![Lettre de motivation](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/Lettre_de_Motivation_Vincent_Hascoet.pdf)|[![Tableau de synthèse](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/BTS SIO_-_Tableau_de_synthese_-_Hascoet_Vincent.pdf)|
 |---|---|
 |CV|Lettre de Motivation|
 ***
