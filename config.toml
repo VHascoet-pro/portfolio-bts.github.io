@@ -10,6 +10,10 @@ theme = 'terminal'
 [[menu.main]]
   name = "Veille Technologique"
   url = "/veille/veille"
+
+[[menu.main]]
+  name = "Rapport de stage 2024"
+  url = "/RDS/rapport"
   
 [[menu.footer]]
   name = "A propos"
