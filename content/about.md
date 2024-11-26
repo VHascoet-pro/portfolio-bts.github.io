@@ -6,6 +6,7 @@ title: "A propos"
 Quimper au Lycée Professionnel Jean Chaptal en BTS SIO option SISR.
 
 J'ai appris l'informatique depuis assez jeune à mes dépends, je travaille actuellement en maintenance informatique et en assistance à distance de machines.|
+|---|---|
 
 ***
 ### - _Expériences professionnelles_
