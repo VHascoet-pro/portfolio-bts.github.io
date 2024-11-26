@@ -2,14 +2,11 @@
 title: "A propos"
 ---
 ***
-Je m'appelle Vincent Hascoët, j'ai actuellement 19 ans et je suis étudiant à
+|<img src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/photo.jpg">|Je m'appelle Vincent Hascoët, j'ai actuellement 19 ans et je suis étudiant à
 Quimper au Lycée Professionnel Jean Chaptal en BTS SIO option SISR.
 
-J'ai appris l'informatique depuis assez jeune à mes dépends, je travaille tous
-les soirs en tant que 
-[Level Designer](https://vhascoet-pro.github.io/portfolio-bts.github.io/level_designer) en télétravail au
-studio [NightDive Studios](https://vhascoet-pro.github.io/portfolio-bts.github.io/nightdive/)
-basé à Toronto, au Canada.
+J'ai appris l'informatique depuis assez jeune à mes dépends, je travaille actuellement en maintenance informatique et en assistance à distance de machines.|
+
 ***
 ### - _Expériences professionnelles_
 ***
@@ -19,6 +16,8 @@ J'ai fait mes études de lycée au [Lycée Professionnel Émile Zola](https://ww
 Au cours de mes 4 années de formation, j'ai eu l'occasion de fairs divers stages
 en entreprise et j'ai pu acquérir une certaine maitrîse en ce qui concerne la 
 maintenance informatique et l'installation ( et la configuration ) de serveurs.
+
+J'ai travaillé pendant 1 an et demi en tant que [Level Designer](https://vhascoet-pro.github.io/portfolio-bts.github.io/level_designer) en télétravail au studio [NightDive Studios](https://vhascoet-pro.github.io/portfolio-bts.github.io/nightdive/) basé à Toronto, au Canada.
 ***
 ### - _Stages effectués_
 ***
@@ -41,7 +40,9 @@ virtuelles via ESXI).
 
 |[![CV](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/CV_Vincent_Hascoet.pdf)|[![Lettre de motivation](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/Lettre_de_Motivation_Vincent_Hascoet.pdf)|[![Tableau de synthèse](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/BTS_SIO_-_Tableau_de_synthese_-_Hascoet_Vincent.pdf)|
 |---|---|---|
-|CV|Lettre de Motivation|
+|CV|Lettre de Motivation|Tableau de Synthèse|
 ***
-### - Je peux également vous proposer ma _[veille technologique](https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille)_ mais également mon _[Rapport de Stage](https://vhasoet-pro.github.io/portfolio-bts.github.io/RDS/Rapport)_ de ma première année de BTS.
+### - Je peux également vous proposer ma _[Veille technologique](https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille)_ mais également mon _[Rapport de Stage](https://vhasoet-pro.github.io/portfolio-bts.github.io/RDS/Rapport)_ de ma première année de BTS.
+***
+J'ai intégralement mis en oeuvre ce site web en l'hébergeant (au début) sur ma propre box à l'adresse suivante (lien invalide) : <http://vincent-hascoet.free.nf>
 ***
