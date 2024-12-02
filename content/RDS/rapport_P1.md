@@ -4,15 +4,16 @@ title: "Premier Labo"
 ***
 Lors de la première partie de la semaine on m'à alloué une salle afin que je puisse faire mes Travaux Pratiques J'ai donc commencé la mise en place de mon premier labo, le même que celui que nous avions commencé au lycée : Le laboratoire GSB.
 Il se composait de ceci :
+[![Schéma du labo 1](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/Schema_Labo1.jpg)](https://vhascoet-pro.github.io/pics/Schema_Labo1.jpg)]
 
 Le plan d'adressage était le suivant:
 
-|Nom de la machine|VLAN|@IP de la machine|@Réseau (CIDR EN /24)|
-|:---:|:---:|:---:|:---:|
-|LABANNU|10|10.1.10.253|10.1.10.0|
-|Routeur côté VLAN 10|10|10.1.10.254|10.1.10.0|
-|Routeur côté VLAN 20|20|10.1.20.254|10.1.20.0|
-|Clients|20|10.1.20.xxx (DHCP)|10.1.20.0|
+|Nom de la machine      |VLAN   |@IP de la machine  |@Réseau (CIDR EN /24) |
+|:---:                  |:---:  |:---:              |:---:                 |
+|LABANNU                |10     |10.1.10.253        |10.1.10.0             |
+|Routeur côté VLAN 10   |10     |10.1.10.254        |10.1.10.0             |
+|Routeur côté VLAN 20   |20     |10.1.20.254        |10.1.20.0             |
+|Clients                |20     |10.1.20.xxx (DHCP) |10.1.20.0             |
 
 À l'aide de la fonctionnalité de Switch Virtuels de l'ESXi, j'ai pu installer deux switch virtuels à l'intérieur de celui-ci, le premier switch virtuel (ou VSwitch) était lié à un VLAN, le vlan 60, Le routeur se connectera dessus et le VLAN 20 servira de patte pour aller d'un site à un autre.
 J'ai également créé un second VSwitch lié au VLAN 10, qui sera attaché à LABANNU et au Routeur (pour le site 10 - LABANNU).
