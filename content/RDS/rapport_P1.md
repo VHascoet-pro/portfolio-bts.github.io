@@ -5,7 +5,7 @@ title: "Premier Labo"
 Lors de la première partie de la semaine on m'à alloué une salle afin que je puisse faire mes Travaux Pratiques J'ai donc commencé la mise en place de mon premier labo, le même que celui que nous avions commencé au lycée : Le laboratoire GSB.
 
 Il se composait de ceci :
-<div align="center">[![Schéma du labo 1](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/Schema_Labo1.jpg)](https://vhascoet-pro.github.io/pics/Schema_Labo1.jpg)</div>
+[![Schéma du labo 1](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/Schema_Labo1.jpg)](https://vhascoet-pro.github.io/pics/Schema_Labo1.jpg)
 
 Le plan d'adressage était le suivant :
 
@@ -65,4 +65,5 @@ Le premier labo est **terminé**
 ***
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds/rapport';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds/rapport_p2';">Suivant</button>|
 |---:|:---|
+|||
 ***
