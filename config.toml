@@ -50,4 +50,4 @@ theme = 'terminal'
 
     [languages.en.params.logo]
       logoText = "Portfolio"
-      logoHomeLink = "https://vhascoet-pro.github.io/portfolio.github.io/"
+      logoHomeLink = "https://vhascoet-pro.github.io/portfolio-bts.github.io/"
