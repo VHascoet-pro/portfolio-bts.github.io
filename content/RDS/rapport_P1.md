@@ -38,9 +38,7 @@ Ici, ESXI fait rapport au système d'exploitation utilisé afin de virtualiser t
 À l'aide de la fonctionnalité de _Switch Virtuels_ de l'ESXi, j'ai pu installer deux switch virtuels à l'intérieur de celui-ci, le premier switch virtuel (ou VSwitch) était lié à un VLAN, le vlan 60, Le routeur se connectera dessus et le VLAN 20 servira de patte pour aller d'un site à un autre.
 J'ai également créé un second VSwitch lié au VLAN 10, qui sera attaché à LABANNU et au Routeur (pour le site 10 - LABANNU).
 
-{{
-    <figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/Capture_vswitch.png" alt="cap_vswitch" position="center" style="border-radius: 8px;" caption="Capture de la configuration des VSwitchs" captionPosition="left" captionStyle="color: black;">
-}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/Capture_vswitch.png" alt="cap_vswitch" position="center" style="border-radius: 8px;" caption="Capture de la configuration des VSwitchs" captionPosition="left" captionStyle="color: black;">}}
 
 Ensuite, j'ai commencé la configuration du routeur sur l'ESXi, comme la machine n'est pas connectable à internet (il n'y à qu'une seule interface RJ45 dessus), j'ai téléchargé depuis une autre station le paquet _isc-dhcp-relay_ afin de pouvoir passer le routeur en relai DHCP quand il y en aura besoin.
 
@@ -63,9 +61,7 @@ Une fois le tout verifié, j'ai commencé la configuration du serveur LABANNU af
 
 Une fois les adresses attribuées, j'ai commencé à tester la configuration en y mettant un client sur le VLAN 20 (de l'autre côté du Switch donc), comme indiqué ici, je reçois bien le bail DHCPde LABANNU, en y exécutant la commande "**traceroute 10.1.10.253**" sur le client, je vois bien que je passe par la machine LABANNU.GSB.local, voulant dire que le DNS et l'AD DS fonctionne correctement.
 
-{{
-    <figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/capture_ipconfig.png" alt="cap_ipconf" position="center" style="border-radius: 8px;" caption="Capture de AD DS" captionPosition="left" captionStyle="color: black;">
-}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/capture_ipconfig.png" alt="cap_ipconf" position="center" style="border-radius: 8px;" caption="Capture de AD DS" captionPosition="left" captionStyle="color: black;">}}
 
 Le premier labo est **terminé**
 ***
