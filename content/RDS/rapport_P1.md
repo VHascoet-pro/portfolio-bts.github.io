@@ -5,7 +5,7 @@ title: "Premier Labo"
 Lors de la première partie de la semaine on m'à alloué une salle afin que je puisse faire mes Travaux Pratiques J'ai donc commencé la mise en place de mon premier labo, le même que celui que nous avions commencé au lycée : Le laboratoire GSB.
 
 Il se composait de ceci :
-[![Schéma du labo 1](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/Schema_Labo1.jpg)](https://vhascoet-pro.github.io/pics/Schema_Labo1.jpg)
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/Schema_Labo1.jpg" alt="map_ed" position="center" style="border-radius: 8px;" caption="Schéma du Laboratoire 1" captionPosition="right" captionStyle="color: black;" >}}
 
 Le plan d'adressage était le suivant :
 
