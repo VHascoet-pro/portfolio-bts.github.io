@@ -61,7 +61,7 @@ Une fois le tout verifié, j'ai commencé la configuration du serveur LABANNU af
 
 Une fois les adresses attribuées, j'ai commencé à tester la configuration en y mettant un client sur le VLAN 20 (de l'autre côté du Switch donc), comme indiqué ici, je reçois bien le bail DHCPde LABANNU, en y exécutant la commande "**traceroute 10.1.10.253**" sur le client, je vois bien que je passe par la machine LABANNU.GSB.local, voulant dire que le DNS et l'AD DS fonctionne correctement.
 
-{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/capture_ipconfig.png" alt="cap_ipconf" position="center" style="border-radius: 8px;" caption="Capture de AD DS" captionPosition="left" captionStyle="color: black;">}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/capture_ipconfig.png" alt="cap_ipconf" position="center" style="border-radius: 8px;" caption="Capture de l'Active Directory" captionPosition="left" captionStyle="color: black;">}}
 
 Le premier labo est **terminé**
 ***
