@@ -70,7 +70,8 @@ j'ai par la suite installé le second pfSense sur la deuxième machine physique,
 
 J'ai ensuite relié les deux pfSense.
 
-Pendant une grosse partie de la 2ème et 3ème semaine, il 
+Pendant une grosse partie de la 2ème et 3ème semaine, il y à eu beaucoup de problèmes avec le pare-feu virtualisé (pare-feu de Quimper) qui n'arrivait pas à faire sortir son traffic de son vSwitch.
+J'ai donc du faire transiter la machine virtuelle sur une machine dédiée afin d'utiliser l'interface déjà présente.
 
 Une fois le réseau intégralement ré-architecturé, j'ai testé chaque client à chaque partie du réseau, afin d'être sûr de la pérennité de celui-ci dans le temps, pour éviter d'éventuelles pannes ou des erreurs d'inattention dans mes fichiers de configuration (en effectuant des sauvegardes de mes fichiers de configuration et des snapshots de mes machines virtuelles aux moments où je suis sûr que leur configuration est correcte et que je n'ai aucune modification ultérieure à faire dessus).
 
@@ -91,6 +92,6 @@ Le labo est finalement **terminé**.
 ***
 
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rapport_p1';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rapport_p3';">Suivant</button>|
-|---|---|
+|---------:|:-------|
 
 ***
