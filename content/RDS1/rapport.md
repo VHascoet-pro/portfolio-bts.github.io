@@ -22,5 +22,5 @@ Dans cette succession de pages,  je vais vous détailler tout mon rapport de sta
 Le rapport de stage sera organisé en fonction des deux activités majeures effectuées à la CMA.
 ***
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rapport_p1';">Suivant</button>|
-|---------:|:-------|
+|---:|:---|
 ***

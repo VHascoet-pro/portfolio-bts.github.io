@@ -67,5 +67,5 @@ Une fois les adresses attribuées, j'ai commencé à tester la configuration en 
 Le premier labo est **terminé**
 ***
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rapport';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rapport_p2';">Suivant</button>|
-|---------:|:-------|
+|---:|:---|
 ***

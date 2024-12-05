@@ -21,6 +21,6 @@ pourquoi).
 ***
 
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/';">Retour à l'accueil</button></div>|<div align="center"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p2';">Suivant ></button></div>|
-|---:|:---:|
+|---:|:---|
 
 ***
