@@ -1,23 +1,24 @@
 ---
 title: "Rapport Partie 2"
 ---
-***
- Pendant toute la semaine, on à mis en place un second labo, se basant sur le travail effectué pour l'ancien (le serveur ADDS LABANNU va être réutilisé).
+ Pendant toute la semaine, on à mis en place (Moi et mon maître de stage) un second labo, se basant sur le travail effectué pour l'ancien (le serveur LABANNU va donc être réutilisé).
 
-Le but du labo est de conçevoir une liaison inter-site entre celui de Quimper et celui de Vannes, afin que les clients d'un réseau puissent reçevoir le domaine de l'autre et inversement, simulant le réseau actuel de la Chambre des Métiers.
+Le but du labo est de conçevoir une <u>**Liaison inter-site**</u> entre le site de Quimper et celui de Vannes afin que les clients du site de Vannes puissent se connecter sur le serveur de Quimper. Simulant ainsi le réseau actuel de la Chambre des Métiers.
 
 ## Description du réseau
 
-Le premier site : Celui de Quimper, doit avoir le serveur LABANNU, il s'agit d'un serveur Active Directory permettant de délivrer le domaine GSB.local, comme le serveur fait partie du site de Quimper, je lui ait attribué un VLAN, le VLAN 10.
+<u>Le premier site :</u> Celui de Quimper, doit avoir le serveur LABANNU, il s'agit d'un serveur Active Directory permettant de délivrer le domaine GSB.local, comme le serveur fait partie du site de Quimper, je lui ait attribué un VLAN, le VLAN 10.
 
-Le second site : Celui de Vannes, doit contenir deux parties, la première contient les serveurs:
+Le second site : Celui de Vannes, doit contenir deux parties, la première contient ces serveurs:
 - Un serveur AD DS RODC (ou Read Only Domain Controller) permettant de se lier à l'Active Directory LABANNU dans le site de Quimper.
 - Un second serveur AD DS qui servira d'Active Directory dédié au site de Vannes.
-Pour cette partie du site, j'ai attribué le VLAN 30 afin de séparer virtuellement les serveurs des clients.
 
-La seconde partie du site servira aux clients de Vannes, je lui ait attribué le VLAN 40 afin de séparer virtuellement les clients des serveurs.
+Pour cette partie du site, j'ai attribué le **VLAN 30** afin de séparer virtuellement les serveurs des clients.
 
-Chaque site doit être relié par un pare-feu sous pfSense (pour tester les configurations, aucune règle de filtrage ne sera mise en place pour l'instant).
+La seconde partie du site servira aux clients de Vannes, je lui ait attribué le **VLAN 40** afin de séparer virtuellement les clients des serveurs.
+
+Chaque site doit être relié par un pare-feu sous pfSense (pour tester les configurations et simplifier la msie en oeuvre, aucune règle de filtrage ne sera mise en place).
+
 En voici le schéma :
 
 {{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/Schema_Labo2.png" alt="sch_lab2" position="center" style="border-radius: 8px;" caption="Schéma du Labo 2" captionPosition="left" captionStyle="color: black;">}}
@@ -45,7 +46,9 @@ Voici également la topologie réseau :
 ||
 |ESXI Vannes|Serveur|100|5|10.5.100.100||
 |Switch Vannes|Switch|100|5|10.5.100.200||
+
 ***
+
 ## Matériel requis
 |NOM|O.S.|LOCALISATION|DÉTAILS|
 |:---:|:---:|:---:|:---:|
@@ -60,8 +63,6 @@ Voici également la topologie réseau :
 |Client|Pop_Os!|Quimper|Administration "distante"|
 
 ## Début du Labo
-
-
 Une fois cette partie du labo terminé, j'ai entamé la seconde partie.
 Pour la seconde partie, j'ai ajouté physiquement deux nouvelles machines, dans la première, j'ai installé l'ESXi et configuré mes quatre machines virtuelles, les deux premières étant reliées à un vSwitch sur le VLAN 30, se sera les serveurs. Les deux dernières connectées au second vSwitch sur le VLAN 40, se sera les clients.
 
@@ -69,26 +70,7 @@ j'ai par la suite installé le second pfSense sur la deuxième machine physique,
 
 J'ai ensuite relié les deux pfSense.
 
-Et je me suis fait face à un problème, même si les routes sont correctement configurées, le NAT activé, les interfaces correctement vérifiées, les deux pare-feux ne communiquent pas du tout, je peux ping du réseau de Quimper aux interfaces de Quimper et inversement, je peux faire de même avec le réseau de Vannes, rien ne peut communiquer.
-
-Comme on était en fin de journée en fin de semaine, j'ai décidé de reporter le diagnostic le lundi de la 3ème semaine.
-
-
-Pour commencer, je me suis attaqué au labo de Quimper, comme il était presque déjà complet depuis le dernier labo, j'ai juste à supprimé le Routeur pour le remplacer par le pare-feu pfSense.Une fois le pfSense installé, j'ai ajouté la table de routage correspondant à l'ancienne, testé avec un client relié sur le même VLAN, je peux communiquer et administrer le pare-feu via le Web UI depuis l'extérieur de l'ESXi en utilisant le client physique [voir la rubrique "Matériel utilisé" ci-dessus].
-
-
-Durant la semaine entière (du Lundi au Jeudi complet), je me suis consacré au diagnostic de la panne et quel était le problème avec les deux pare-feux.
-
-Même après avoir demandé au maître de Stage, rien y fait, rien ne fonctionne.
-
-Le Vendredi, on s'est mis d'accord sur un théorie entre moi et mon maître de Stage:
-Le pfSense de Quimper (virtualisé dans un ESXi) ne peux pas du tout communiquer avec le reste du réseau, de par le fait qu'il est virtualisé, il n'interagit pas avec les interfaces de la même façon qu'un pare-feu physique.
-
-On s'est donc décidé de mettre en place une autre machine dédiée au pare-feu de Quimper.
-
-
-Pendant toute la semaine, j'ai recommencé de (presque) zéro mon labo, afin de mettre en place correctement les pare-feux physiques, les testant de A à Z.
-J'ai également ré-architecturé physiquement mon réseau complet en changement de place les switch, PC etc... afin d'avoir une séparation visuelle de chaque réseau.
+Pendant une grosse partie de la 2ème et 3ème semaine, il 
 
 Une fois le réseau intégralement ré-architecturé, j'ai testé chaque client à chaque partie du réseau, afin d'être sûr de la pérennité de celui-ci dans le temps, pour éviter d'éventuelles pannes ou des erreurs d'inattention dans mes fichiers de configuration (en effectuant des sauvegardes de mes fichiers de configuration et des snapshots de mes machines virtuelles aux moments où je suis sûr que leur configuration est correcte et que je n'ai aucune modification ultérieure à faire dessus).
 
@@ -97,20 +79,18 @@ Cinquième et dernière Semaine de Stage
 
 Lors de cette dernière semaine de stage, j'ai mis en place le contrôleur RODC de Vannes pour qu'il puisse communiquer avec LABANNU pour pouvoir devenir un domaine en lecture seule pour pouvoir le faire transiter vers le réseau de Vannes.
 Une fois le contrôleur RODC mis en place, j'ai intégré les clients du VLAN 40 dans celui-ci, après avoir crée des utilisateurs, chacun de mes clients (Windows 7) fonctionnant et arrivant à se connecter au serveur.
+
 Ensuite, j'ai installé le second serveur AD DS afin d'avoir un domaine dédié au réseau de Vannes, essayé la connexion avec l'un des clients du VLAN 40, comme il arrivait à se connecter au domaine correctement, je suis passé à la phase suivante du labo.
 
 Pour la phase suivante du labo, il fallait configurer le VLAN 15 (Clients de Quimper) et 16 (clients de Vannes) sur le Switch du réseau de Quimper, afin d'avoir une partie isolée qui sert aux clients externes pour Quimper et Vannes.
+
 Après avoir connecté mon client Linux physique sur le VLAN 15, j'ai pu connecter mon domaine GSB.local à celui-ci, et j'ai réussi à avoir accès aux dossiers partagés que j'avais configuré sur le domaine de Quimper.
 
-Le labo est finalement terminé.
+Le labo est finalement **terminé**.
 
-Par la suite, j'ai vu avec le technicien en maintenance informatique comment il gérait les tickets pour les employés de la CMA.
-Les tickets sont des évenements créés par les utilisateurs de la CMA et du CFA pour des informations et/ou des demandes de changement de matériel/des problèmes systèmes etc... Le tout pour des problèmes de niveau 1 et 2 seulement, pour des problèmes au dessus, un administrateur de la chambre des métiers va traiter le ticket
-
-Les classes de maintenances ont été crées par l'AFNOR pour évaluer la difficulté des tâches à effectuer.
-Une maintenance de niveau (ou de classe) 1 correspond à une maintenance simple ou basique qui est facile à effectuer, et qui peut être effectuée par une personne normale.
-Une maintenance de niveau 1 et 2 correspond à une tâche qui requiert un technicien de maintenance pour pouvoir la faire.
 ***
-|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rapport_p1';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rapport_concl';">Suivant</button>|
+
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rapport_p1';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rapport_p3';">Suivant</button>|
 |---|---|
+
 ***
