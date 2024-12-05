@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Uploader le site Hugo dans Github Pages
+name: Uploader le site Hugo sur Github Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -39,11 +39,11 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Installer Dart Sass
         run: sudo snap install dart-sass
-      - name: Checkout
+      - name: Vérifications
         uses: actions/checkout@v4
         with:
           submodules: recursive
-      - name: Setup les Pages
+      - name: Mise en place des Pages
         id: pages
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
@@ -57,7 +57,7 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Uploader l'artéfact
+      - name: Envoyer l'artéfact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./public
@@ -70,6 +70,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deployer sur GitHub Pages
+      - name: Déploiment sur GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
