@@ -7,7 +7,7 @@ En 2003, l'entreprise polonaise, nouvellement crée. CryTek se proposa pour amé
 - D'une Simulation de fluides beaucoup plus réaliste
 - D'un Système de Méga-Textures
 - D'une limitation de terrain drastiquement plus élevée
-- Du tout premier moteur permettant le SLI et le Crossfire (technologie de nVIDIA et d'AMD permettant de faire fonctionner jusqu'à 4 cartes graphiques en simultané sur la même carte mère, afin de partager la VRAM. Ces systèmes utilise une nappe permettant la synchronisation de ces cartes, qui se connectait sur le dessus de la carte.)
+- Du tout premier moteur permettant le SLI et le Crossfire (technologie de nVIDIA et d'AMD permettant de faire fonctionner jusqu'à 4 cartes graphiques en simultané sur la même carte mère, afin de partager la VRAM. Ces systèmes utilise une nappe permettant la synchronisation de ces cartes, qui se connectait sur le dessus de la carte).
 
 # Les Méga-Textures
 <u>Qu'est-ce qu'une Texture ?</u>
