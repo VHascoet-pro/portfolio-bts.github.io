@@ -8,6 +8,10 @@ theme = 'terminal'
   url = "/about"
 
 [[menu.main]]
+  name = "Page des certifications"
+  url = "/certif"
+
+[[menu.main]]
   name = "Veille Technologique"
   url = "/veille/veille"
 
