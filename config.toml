@@ -18,7 +18,10 @@ theme = 'terminal'
 [[menu.main]]
   name = "Rapport de stage 2024"
   url = "/RDS1/rapport"
-  
+
+[[menu.main]]
+  name = "Rapport de stage 2025"
+  url = "/RDS2/RDS2_1"  
 [[menu.footer]]
   name = "A propos"
   url = "/about"
