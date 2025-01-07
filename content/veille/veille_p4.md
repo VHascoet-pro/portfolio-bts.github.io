@@ -5,13 +5,13 @@ En 1994, l'ingénieur [_Tim Sweeney_](https://en.wikipedia.org/wiki/Tim_Sweeney)
 
 Voilà la démo technique en question :
 
-{{<video src="https://vhascoet-pro.github.io/portfolio-bts.github.io/vids/UE1_flyby_intro.mp4" height="640" width="640">}}
+{{<video src="https://vhascoet-pro.github.io/portfolio-bts.github.io/vids/UE1_flyby_intro.mp4" height="640" width="640" position="center">}}
 
 ## Qu'est-ce qu'un voxel ?
 ***
 
 Un Voxel est, en quelque sorte, un pixel en trois dimensions, en voici un :
-{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/voxel_example.webp" alt="Exemple de Voxel" position="center" style="border-radius: 8px;" caption="Voici un voxel" captionPosition="right" captionStyle="color: black;" height="800" width="600">}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/voxel_example.webp" alt="Exemple de Voxel" position="center" style="border-radius: 8px;" caption="Voici un voxel" captionPosition="right" captionStyle="color: black;" height="640" width="480">}}
 
 Il s'agit d'un type de pixel qui permet de générer des scènes en 3D "sans" polygônes, cela permettait à une certaine époque, d'avoir des modèles 3D sans avoir aucune vertrice, car cela est considéré comme un pixel normal.
 ***
