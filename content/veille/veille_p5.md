@@ -1,7 +1,6 @@
-+++
+---
 title = "Cry Engine"
-draft = false
-+++
+---
 En 2003, l'entreprise polonaise, nouvellement crée. CryTek se proposa pour améliorer le moteur de jeux [Unreal Engine 2](https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p4) afin de lui doter :
 - D'une Simulation de fluides beaucoup plus réaliste
 - D'un Système de Méga-Textures
