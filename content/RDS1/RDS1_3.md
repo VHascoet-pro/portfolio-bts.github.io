@@ -91,7 +91,7 @@ Le labo est finalement **terminé**.
 
 ***
 
-|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rapport_p1';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rapport_p3';">Suivant</button>|
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_2';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_4';">Suivant</button>|
 |---------:|:-------|
 
 ***
