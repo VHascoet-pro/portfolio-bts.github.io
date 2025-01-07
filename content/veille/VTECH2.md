@@ -82,7 +82,6 @@ _Après le rendu :_
 
 **À la page suivante, on va parler du troisième grand moteur de jeux qui révolutionnera le jeux vidéo et le monde de la 3D en général (il à aussi été créé par John Carmack)**
 
-<div align="left"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille';">< Precédent</button>
-<div align="right"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p3';">Suivant ></button>
-
 ***
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/VTECH1';">Precédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/VTECH3';">Suivant</button>|
+|-|-|

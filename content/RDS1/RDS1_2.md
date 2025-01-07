@@ -65,7 +65,7 @@ Une fois les adresses attribuées, j'ai commencé à tester la configuration en 
 {{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/capture_ipconfig.png" alt="cap_ipconf" position="center" style="border-radius: 8px;" caption="Capture de l'Active Directory" captionPosition="left" captionStyle="color: black;">}}
 
 Le premier labo est **terminé**
+
 ***
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_1';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_3';">Suivant</button>|
-|---:|:---|
-***
+|-|-|

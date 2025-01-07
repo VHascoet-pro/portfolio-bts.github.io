@@ -5,7 +5,7 @@ En 1994, l'ingénieur [_Tim Sweeney_](https://en.wikipedia.org/wiki/Tim_Sweeney)
 
 Voilà la démo technique en question :
 
-{{<video src="https://vhascoet-pro.github.io/portfolio-bts.github.io/vids/UE1_flyby_intro.mp4" height="640" width="640" position="center">}}
+<div align="center">{{<video src="https://vhascoet-pro.github.io/portfolio-bts.github.io/vids/UE1_flyby_intro.mp4" height="640" width="640" position="center">}}</div>
 
 ## Qu'est-ce qu'un voxel ?
 ***
@@ -22,6 +22,7 @@ Maintenant, il suffit d'un seul fichier d'animations lié à un modèle, qui con
 {{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/skeleton_bodies.webp" alt="Exemple de Voxel" position="center" style="border-radius: 8px;" caption="Voici un squelette sur Unreal" captionPosition="right" captionStyle="color: black;" >}}
 
 Avoir un système de squelette d'animation permet de créer plus efficacement des animations sans avoir à utiliser beaucoup d'espace (comparé à l'ancien système d'animation introduit par ID Software avec son moteur ID Tech Engine 1 dans le jeu Quake, dans lequel les animations étaient faites en bougeant des groupes de vertrices image par image, pour donner une animation plutôt fluide mais qui était très mal implémentable avec l'évolution des ordinateurs de l'époque et donc, du nombre de vertrices possibles par modèle 3D )
+
 ***
-<div align="left"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p3';">< Precédent</button></div> 
-<div align="right"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p5';">Suivant ></button></div>
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/VTECH3';">Precédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/VTECH5';">Suivant</button>|
+|-|-|

@@ -34,5 +34,5 @@ Ce qui à permi de :
 2. Avoir un jeu qui ne pert jamais en qualité visuelle quelle que soit la distance du joueur aux modèles.
 
 ***
-|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p4';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p6';">Suivant</button>|
-|---|---|
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/VTECH4';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/VTECH6';">Suivant</button>|
+|-|-|

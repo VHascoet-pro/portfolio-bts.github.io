@@ -12,8 +12,5 @@ Une maintenance de niveau (ou de classe) 1 correspond à une maintenance simple 
 Une maintenance de niveau 1 et 2 correspond à une tâche qui requiert un technicien de maintenance pour pouvoir la faire.
 
 ***
-
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_3';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_5';">Suivant</button>|
-|---:|:---|
-
-***
+|-|-|

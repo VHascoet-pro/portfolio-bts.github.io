@@ -21,6 +21,6 @@ Un double virtuel est une recréation d'un corps aussi fidèle que possible en u
 
 Ce corps peut être quelque chose d'Organique, de Mécanique ou Génétique.
 
----
-|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p5';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p7';">Suivant</button>|
-|:---:|:---:|
+***
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/VTECH5';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/VTECH7';">Suivant</button>|
+|-|-|
