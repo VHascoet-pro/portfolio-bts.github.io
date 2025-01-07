@@ -1,5 +1,5 @@
 ---
-title = "Unreal Engine"
+title: "Unreal Engine"
 ---
 En 1994, l'ingénieur Tim Sweeney au studio Epic MegaGames voudra faire un jeu de flipper en 3D pour en faire une démo technique qui lui permettra de tester ses compétences dessus, dont un système permettant d'afficher et d'étirer des textures afin de fausser de la 3D, c'est du _*parralax*_, il se mettra au travail et réussira à sortir, en 1995 : Un moteur 3D innovant qui permettra de faire de la simulation de fluides ( très primitive selon nos standards de maintenant ), des systèmes de brouillards ambiant, des effets utilisant des voxels, des reflets dynamiques.
 

@@ -1,5 +1,5 @@
 ---
-title = "Wolfenstein Tech Engine"
+title: "Wolfenstein Tech Engine"
 ---
 Le _premier_ moteur de jeu open-source.
 

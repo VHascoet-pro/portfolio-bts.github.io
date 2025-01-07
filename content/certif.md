@@ -1,7 +1,6 @@
-+++
-title = "Page des certifications"
-draft = false
-+++
+---
+title: "Page des certifications"
+---
 ### Voici la page qui contient toutes mes certifications obtenues au cours de mes années d'études
 |<div align="center">[![Certificat Cisco](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/certif/certif_cisco_linux-1.pdf)</div>|
 |:---:|

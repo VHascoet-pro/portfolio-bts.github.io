@@ -1,5 +1,5 @@
 ---
-title : "Rapport de Stage 2024"
+title: "Rapport de Stage 2024"
 ---
 ## Description de l'entreprise
  La Chambre des Métiers et de l’Artisanat (CMA) de Bretagne est un service réparti en 7 CFA, composé de 900 salariés qui sont dispatchés dans les services d’Administration et d’Enseignement, avec un peu plus de 8 500 apprentis présents en Bretagne, répartis sur un total de 17 sites.    
