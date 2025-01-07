@@ -1,7 +1,6 @@
-+++
+---
 title = "Ma Veille Technologique"
-draft = false
-+++
+---
 J'ai pris pour thème : _Les moteurs de jeux_
 
 ***

@@ -1,7 +1,6 @@
-+++
+---
 title = "ID Tech Engine"
-draft = false
-+++
+---
 Ce moteur de jeux est le premier moteur de jeu à avoir pu intégrer intégralement
 la 3D dans le monde de l'informatique, ce moteur à _UNE SEULE_ particularité, il
 à été conçu intégralement autour d'un processeur : Le tout premier Intel Pentium

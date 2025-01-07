@@ -13,7 +13,7 @@ theme = 'terminal'
 
 [[menu.main]]
   name = "Veille Technologique"
-  url = "/veille/veille"
+  url = "/veille/veille_p1"
 
 [[menu.main]]
   name = "Rapport de stage 2024"
