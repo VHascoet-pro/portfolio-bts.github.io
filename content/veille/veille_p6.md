@@ -17,8 +17,9 @@ Mais ils ne sont pas qu'utilisés dans l'audiovisuel (qui à un lien presque dir
 Désormais, ce type de moteurs de jeux sont tellement sophistiqués qu'ils permettent de faire de la simulation de fluides et de rayons (avec la technologie du Ray-Tracing) et ainsi, faciliter la création de Doubles Virtuels.
 
 ### Mais qu'est-ce qu'un <u>Double Virtuel</u> ?
-Un double virtuel est une recréation d'un corps (organique ou mécanique) aussi fidèle que possible en utilisant des algorithmes, cela permet d'avoir des modèles à l'échelle 1:1 qui peuvent subir autant de tests que possibles sans à avoir à les recréer en laboratoire ou en argile (dans le cas du prototypage d'une voiture par exemple).
+Un double virtuel est une recréation d'un corps aussi fidèle que possible en utilisant des algorithmes, cela permet d'avoir des modèles à l'échelle 1:1 qui peuvent subir autant de tests que possibles sans à avoir à les recréer en laboratoire ou en argile (dans le cas du prototypage d'une voiture par exemple).
 
+Ce corps peut être quelque chose d'Organique, de Mécanique ou Génétique.
 
 ---
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p5';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p7';">Suivant</button>|

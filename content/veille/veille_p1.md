@@ -1,7 +1,7 @@
 ---
 title = "Ma Veille Technologique"
 ---
-J'ai pris pour thème : _Les moteurs de jeux_
+J'ai pris pour thème : <u>Les moteurs de jeux</u>
 
 ***
 Des moteurs de jeux, il y en à plein : Du très compliqué, modulaire au possible,
@@ -21,5 +21,3 @@ pourquoi).
 
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/';">Retour à l'accueil</button></div>|<div align="center"><button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille_p2';">Suivant ></button></div>|
 |---:|:---|
-
-***
