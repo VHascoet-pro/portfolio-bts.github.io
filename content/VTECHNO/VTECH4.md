@@ -24,5 +24,5 @@ Maintenant, il suffit d'un seul fichier d'animations lié à un modèle, qui con
 Avoir un système de squelette d'animation permet de créer plus efficacement des animations sans avoir à utiliser beaucoup d'espace (comparé à l'ancien système d'animation introduit par ID Software avec son moteur ID Tech Engine 1 dans le jeu Quake, dans lequel les animations étaient faites en bougeant des groupes de vertrices image par image, pour donner une animation plutôt fluide mais qui était très mal implémentable avec l'évolution des ordinateurs de l'époque et donc, du nombre de vertrices possibles par modèle 3D )
 
 ***
-|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/VTECH3';">Precédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/VTECH5';">Suivant</button>|
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/vtechno/VTECH3';">Precédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/vtechno/VTECH5';">Suivant</button>|
 |-|-|
