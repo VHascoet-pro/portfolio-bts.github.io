@@ -121,5 +121,5 @@ Nous appliquons l'algorithme présenté ci-dessus :
 Cette méthode était très efficace sur des moteurs basé sur la 2D (Doom Engine) et sur les premiers moteurs basés sur la 3D (ID Tech Engine 1, 2 Unreal Engine). il continue toujours d'être utilisé maintenant, mais dans une grande évolution nommée le RayTracing temps-réel, un système fonctionnant exactement de la même manière, mais pour chaque pixel d'une scène 3D afin de calculer en temps réel la lumière d'une scène en 3D.
 ***
 
-|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/vtechno/VTECH2';">Precédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/vtechno/VTECH4';">Suivant</button>|
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/vtechno/vtech2';">Precédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/vtechno/vtech4';">Suivant</button>|
 |-|-|

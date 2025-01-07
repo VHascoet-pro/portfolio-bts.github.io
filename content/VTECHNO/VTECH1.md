@@ -12,5 +12,5 @@ Oui, les moteurs de jeux sont partout, et je vais vous présenter quelques uns d
 
 ***
 
-|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/';">Retour à l'accueil</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/vtechno/VTECH2';">Suivant</button>|
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/';">Retour à l'accueil</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/vtechno/vtech2';">Suivant</button>|
 |-|-|
