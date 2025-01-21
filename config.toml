@@ -40,21 +40,22 @@ theme = 'terminal'
   
 [languages]
   [languages.en]
-    languageName = "Français"
-    title = "Portfolio"
-    subtitle = ""
-    owner = "Vincent Hascoët"
-    keywords = ""
-    copyright = "(2023 - 2025) - Hascoët Vincent"
-    menuMore = "Voir plus"
-    readMore = "Lire plus"
-    readOtherPosts = "Lire d'autres publications"
-    newerPosts = "Publications récentes"
-    olderPosts = "Anciennes publications"
-    missingContentMessage = "Page non trouvée..."
-    missingBackButtonLabel = "Retour à l'accueil"
-    minuteReadingTime = "minutes de lecture"
-    words = "mots"
+    [languages.en.params]
+      languageName = "Français"
+      title = "Portfolio"
+      subtitle = ""
+      owner = "Vincent Hascoët"
+      keywords = ""
+      copyright = "(2023 - 2025) - Hascoët Vincent"
+      menuMore = "Voir plus"
+      readMore = "Lire plus"
+      readOtherPosts = "Lire d'autres publications"
+      newerPosts = "Publications récentes"
+      olderPosts = "Anciennes publications"
+      missingContentMessage = "Page non trouvée..."
+      missingBackButtonLabel = "Retour à l'accueil"
+      minuteReadingTime = "minutes de lecture"
+      words = "mots"
 
     [languages.en.params.logo]
       logoText = "Portfolio"
