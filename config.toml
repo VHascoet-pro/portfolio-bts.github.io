@@ -1,4 +1,4 @@
-baseURL = 'https://vhascoet-pro.github.io/portfolio-bts.github.io/'
+baseURL = "https://vhascoet-pro.github.io/portfolio-bts.github.io/"
 languageCode = 'fr'
 title = 'Portfolio'
 theme = 'terminal'
