@@ -8,32 +8,22 @@ title: "A propos"
 ***
 ### - _Expériences professionnelles_
 ***
-J'ai fait mes études de lycée au [Lycée Professionnel Émile Zola](https://www.lpzola56.com/)
-à Hennebont, dans le Morbihan.
+J'ai fait mes études de lycée au [Lycée Professionnel Émile Zola](https://www.lpzola56.com/) à Hennebont, dans le Morbihan.
+Je suis actuellement en Seconde Année de BTS SIO au [Lycée Technologique Jean Chaptal à Quimper](https://www.lycee-chaptal.fr) à Quimper, au Finistère
 
-Au cours de mes 4 années de formation, j'ai eu l'occasion de fairs divers stages
-en entreprise et j'ai pu acquérir une certaine maitrîse en ce qui concerne la 
-maintenance informatique et l'installation ( et la configuration ) de serveurs.
+Au cours de mes 4 années (et demi) de formation, j'ai eu l'occasion de fairs divers stages en entreprise et j'ai pu acquérir une certaine maitrîse en ce qui concerne la  maintenance informatique et l'installation (et la configuration) de serveurs.
 
 J'ai travaillé pendant 1 an et demi en tant que [Level Designer](https://vhascoet-pro.github.io/portfolio-bts.github.io/level_designer) en télétravail au studio [NightDive Studios](https://vhascoet-pro.github.io/portfolio-bts.github.io/nightdive/) basé à Toronto, au Canada.
 ***
 ### - _Stages effectués_
 ***
-- **1)** 4 semaines de stages à Oméga Informatique à Plouay (Technicien Informatique,
-Installation et mise en place de serveurs informatique pour des professionnels
-et des particuliers).
+- **1)** 4 semaines de stages à Oméga Informatique à Plouay (Technicien Informatique, Installation et mise en place de serveurs informatique pour des professionnels et des particuliers).
 
-- **2)** 4 semaines de stages à J'Ty Connect à Quiberon (Technicien Informatique, 
-vente de produits informatiques et relation clientelle)
+- **2)** 4 semaines de stages à J'Ty Connect à Quiberon (Technicien Informatique, vente de produits informatiques et relation clientelle)
 
-- **3)** 8 semaines de stages à J'Ty Connect à Quiberon (idem, mais j'ai également
-fait de la facturation et de la gestion-comptabilité des clients et des devis 
-clients)
+- **3)** 8 semaines de stages à J'Ty Connect à Quiberon (idem, mais j'ai également fait de la facturation et de la gestion-comptabilité des clients et des devis clients)
 
-- **4)** 5 semaines de stages à la Chambre des Métiers à Cuzon, Quimper, j'ai
-effectué deux grands projets durant l'intégralité de ma période de stage
-(Administration de réseaux, gestion d'Active Directory, de plusieurs stacks de machines
-virtuelles via ESXI).
+- **4)** 5 semaines de stages à la Chambre des Métiers à Cuzon, Quimper, j'ai effectué deux grands projets durant l'intégralité de ma période de stage (Administration de réseaux, gestion d'Active Directory, de plusieurs stacks de machines virtuelles via ESXI).
 ***
 
 |<div align="center">[![CV](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/CV_Vincent_Hascoet.pdf)</div>|<div align="center">[![Lettre de motivation](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/Lettre_de_Motivation_Vincent_Hascoet.pdf)</div>|<div align="center">[![Tableau de synthèse](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/BTS_SIO_-_Tableau_de_synthese_-_Hascoet_Vincent.pdf)</div>|
