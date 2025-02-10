@@ -9,6 +9,7 @@ title: "A propos"
 ### - _Expériences professionnelles_
 ***
 J'ai fait mes études de lycée au [Lycée Professionnel Émile Zola](https://www.lpzola56.com/) à Hennebont, dans le Morbihan.
+
 Je suis actuellement en Seconde Année de BTS SIO au [Lycée Technologique Jean Chaptal à Quimper](https://www.lycee-chaptal.fr) à Quimper, au Finistère
 
 Au cours de mes 4 années (et demi) de formation, j'ai eu l'occasion de fairs divers stages en entreprise et j'ai pu acquérir une certaine maitrîse en ce qui concerne la  maintenance informatique et l'installation (et la configuration) de serveurs.
