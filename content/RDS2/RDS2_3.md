@@ -67,10 +67,8 @@ Une fois le DHCP configuré et FOG installé, plus besoin de toucher aux fichier
 
 ---
 
-{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS/2025-01-13_10-52.png" alt="Menu principal de FOG : Montrant le tableau de bord." position="center" style="border-radius: 8px;" caption="" captionPosition="right" captionStyle="color: black;">}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS/2025-01-13_10-52.png" alt="Menu principal de FOG : Montrant le tableau de bord." position="center" style="border-radius: 8px;" caption="Tableau de bord de FOG" captionPosition="right" captionStyle="color: black;">}}
 
 ---
-
-
 | <button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_2';">Précédent</button> | <button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_4';">Suivant</button> |
 |-|-|
