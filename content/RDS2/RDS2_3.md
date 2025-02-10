@@ -1,9 +1,7 @@
 ---
 title: "Troisième Partie - Installation de FOG"
 ---
-<u>Fonctionnement de FOG
-
-</u>
+#### <u>Fonctionnement de FOG</u>
 
 FOG est un serveur de déploiement d'images qui est accessible par deux moyens :
 
