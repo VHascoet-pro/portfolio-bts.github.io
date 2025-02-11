@@ -21,7 +21,7 @@ Chaque site doit être relié par un pare-feu sous pfSense (pour tester les conf
 
 En voici le schéma :
 
-{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/Schema_Labo2.png" alt="sch_lab2" position="center" style="border-radius: 8px;" caption="Schéma du Labo 2" captionPosition="left" captionStyle="color: black;">}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/Schema_Labo2.png" alt="sch_lab2" position="center" style="border-radius: 8px;" caption="Schéma du Labo 2" captionPosition="left" captionStyle="color: black;">}}
 
 Voici également la topologie réseau :
 |Nom de la machine|Type|VLAN|N° de Site|Adresse IP|Adresse Réseau|

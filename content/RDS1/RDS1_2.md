@@ -5,7 +5,7 @@ title: "Premier Labo"
 Lors de la première partie de la semaine on m'à alloué une salle afin que je puisse faire mes Travaux Pratiques J'ai donc commencé la mise en place de mon premier labo, le même que celui que nous avions commencé au lycée : Le laboratoire GSB.
 
 Il se composait de ceci :
-{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/Schema_Labo1.jpg" alt="sch_gsb" position="center" style="border-radius: 8px;" caption="Schéma du Laboratoire GSB (allegé pour cause de manque de temps à l'entreprise)" captionPosition="left" captionStyle="color: black;" >}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/Schema_Labo1.jpg" alt="sch_gsb" position="center" style="border-radius: 8px;" caption="Schéma du Laboratoire GSB (allegé pour cause de manque de temps à l'entreprise)" captionPosition="left" captionStyle="color: black;" >}}
 
 Le plan d'adressage était le suivant :
 
@@ -38,7 +38,7 @@ Ici, ESXI fait rapport au système d'exploitation utilisé afin de virtualiser t
 À l'aide de la fonctionnalité de _Switch Virtuels_ de l'ESXi, j'ai pu installer deux switch virtuels à l'intérieur de celui-ci, le premier switch virtuel (ou VSwitch) était lié à un VLAN, le vlan 60, Le routeur se connectera dessus et le VLAN 20 servira de patte pour aller d'un site à un autre.
 J'ai également créé un second VSwitch lié au VLAN 10, qui sera attaché à LABANNU et au Routeur (pour le site 10 - LABANNU).
 
-{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/Capture_vswitch.png" alt="cap_vswitch" position="center" style="border-radius: 8px;" caption="Capture de la configuration des VSwitchs" captionPosition="left" captionStyle="color: black;">}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/Capture_vswitch.png" alt="cap_vswitch" position="center" style="border-radius: 8px;" caption="Capture de la configuration des VSwitchs" captionPosition="left" captionStyle="color: black;">}}
 
 Ensuite, j'ai commencé la configuration du routeur sur l'ESXi, comme la machine n'est pas connectable à internet (il n'y à qu'une seule interface RJ45 dessus), j'ai téléchargé depuis une autre station le paquet _isc-dhcp-relay_ afin de pouvoir passer le routeur en relai DHCP quand il y en aura besoin.
 
@@ -50,7 +50,7 @@ Durant la seconde partie de la semaine, j'ai terminé la mise en place du routeu
 
 <br>J'ai ensuite testé à l'aide de pings les différentes parties du réseau afin de connaître et de fiabiliser toute ma configuration :
 
-|![capture vlan 10](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/capture_10.png)|![capture vlan 20](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/capture_20.png)|![capture vlan 60](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/capture_60.png)|
+|![capture vlan 10](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/capture_10.png)|![capture vlan 20](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/capture_20.png)|![capture vlan 60](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/capture_60.png)|
 |:---:|:---:|:---:|
 |Ping vers le réseau situé dans le **VLAN 10**.|Ping vers le réseau situé dans le **VLAN 20**|Ping vers le réseau situé dans le **VLAN 60**|
 
@@ -62,7 +62,7 @@ Une fois le tout verifié, j'ai commencé la configuration du serveur LABANNU :
 
 Une fois les adresses attribuées, j'ai commencé à tester la configuration en y mettant un client sur le VLAN 20 (de l'autre côté du Switch donc), comme indiqué ici, je reçois bien le bail DHCP de LABANNU, en y exécutant la commande "**traceroute 10.1.10.253**" sur le client. Je vois bel et bien que je passe par la machine <u>LABANNU.GSB.local</u>, voulant dire que le DNS et l'Active Diretory fonctionne correctement.
 
-{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/capture_ipconfig.png" alt="cap_ipconf" position="center" style="border-radius: 8px;" caption="Capture de l'Active Directory" captionPosition="left" captionStyle="color: black;">}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/capture_ipconfig.png" alt="cap_ipconf" position="center" style="border-radius: 8px;" caption="Capture de l'Active Directory" captionPosition="left" captionStyle="color: black;">}}
 
 Le premier labo est **terminé**
 
