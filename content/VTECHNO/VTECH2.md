@@ -15,7 +15,7 @@ Sur cette image de couverture du jeu, on y voit une capture d'écran du jeu, on 
 
 C'est également le tout premier moteur de jeux à utiliser le langage **C** pour son developpement, comme le langage était encore sous-documenté, John Carmack à dû créer des fonctions uniques à ce langage, dont une fonction permettant de calculer une racine carrée inverse, la voici :
 
-```c
+{{<code language="c" title="extrait de /etc/dhcp/dhcpd.conf" id="1" expand="Montrer" collapse="Cacher" isCollapsed="true">}}
 float Q_rsqrt( float number ){
 long i;
 float x2, y;
@@ -36,14 +36,14 @@ y  = y * ( threehalfs - ( x2 * y * y ) ); // 1st iteration
 #endif
 return y;
 }
-```
+{{</code>}}
 
 
 Il s'agit d'une fonction qui s'avèrera 4 fois plus rapide que la fonction
 
-```c
+{{<code language="c" title="extrait de /etc/dhcp/dhcpd.conf" id="1" expand="Montrer" collapse="Cacher" isCollapsed="true">}}
 (float) 1.0/sqrt(x)
-```
+{{</code>}}
 
 Qui est donc plus optimisée et est plus adaptée aux jeux vidéos.
 ***
