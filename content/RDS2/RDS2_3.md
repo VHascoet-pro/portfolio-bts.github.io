@@ -43,7 +43,7 @@ Une fois le schéma conçu, j'ai pu commencer l'installation du serveur DHCP (is
 
 *Ce fichier de configuration n'est pas nécessaire si FOG à été installé avec le daemon DHCP intégré, cependant, il reste utile dans le cas ou le serveur à été installé à part.*
 
-```cpp
+{{<code launguage="cpp" title="extrait de /etc/dhcp/dhcpd.conf" id="1" expand="Montrer" collapse="Cacher" isCollapsed="true">}}
 option space PXE;
 option PXE.mtftp-ip        code 1 = ip-adress;
 option PXE.mtftp-cport     code 2 = unsigned integer 16;
@@ -85,7 +85,7 @@ subnet 172.168.1.0 netmask 255.255.55.0{
         filename "undionly.kpxe";
     }
 }
-```
+{{</code>}}
 #### Spécificité des BIOS/UEFI
 Au fur et à mesure du temps, on est assez vite passé du BIOS (32 bits seulement, prise en charge de disques jusqu'à 2.2To, pas de secure boot, pas de fast-boot), au système UEFI (Prise en charge du 32 et 64 bits, de disques allant jusqu'à 9.4Zo, prise en charge du secure boot et un démarrage plus rapide), les différences notables étant la façon dont est stocké celui-ci, le BIOS est dans une ROM tandis qu'un UEFI est dans une mémoire flash (ce qui permet de le metrte à jour bien plus facilement qu'avec un BIOS classique).
 L'UEFI est adopté par les grandes marques de cartes-mères depuis 2006 (19 ans déjà !).
