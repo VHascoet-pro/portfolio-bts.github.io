@@ -28,11 +28,6 @@ Le site sera hébergé sur Wordpress (pour sa facilité de mise en service et d'
 
 ## Conclusion
 [Lien](https://portesouvertes-iutq.univ-brest.fr) vers la page web.
-
-TEST : 
-{{< qr >}}
-https://gohugo.io
-{{< /qr >}}
 ***
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_3';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io'">Retour à l'accueil</button>|
 |-|-|
