@@ -1,13 +1,27 @@
 ---
 title: "Création d'un site Web pour l'IUT de Quimper"
-fradt: true
+draft: true
 ---
 ### But
+Création d'un site web pour les portes ouvertes de l'IUT de Quimper.
 ### Cahier des charges
+1) Le site doit être responsive
+2) Il doit être intuitif
+3) Il doit afficher :
+- La carte de l'IUT avec des hotspots où l'on va voir les différents points d'intérêt de la journée portes ouvertes.
+- Un planning des conférences
+- La description des formations proposées
+- Les actualités
 ### Spécifications techniques
+J'ai opté pour l'installation de Wamp Server sur Windows Server 2022 Standard.
+<u>Pourquoi ?</u>
+Comme les portes ouvertes (et donc par conséquent, le site) se passera après la fin de ma période de stage, le 1er Mars. il fallait un système permettant à l'importe qui des services concernés par l'administration des portes ouvertes de pouvoir à la fois administrer le site de l'extérieur **mais également** de l'intérieur (du serveur donc).
+Il fallait donc un système d'exploitation accessible à tous (donc graphique) et où tout le monde peut facilement se retrouver (du Windows Server donc, pas du Linux).
+
+Le site sera hébergé sur Wordpress (pour sa facilité de mise en service et d'usage).
 ### Mise en oeuvre
 ### Conclusion
-[Lien](https://portesouvertes-iutq.univ-brest.fr) vers la page web
+[Lien](https://portesouvertes-iutq.univ-brest.fr) vers la page web.
 ***
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_3';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io'">Retour à l'accueil</button>|
 |-|-|

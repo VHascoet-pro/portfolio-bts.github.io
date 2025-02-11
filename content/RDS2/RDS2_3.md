@@ -5,8 +5,8 @@ title: "Troisième Partie - Installation de FOG"
 
 FOG est un serveur de déploiement d'images qui est accessible par deux moyens :
 
-* Le panneau d'administration
-* iPXE (ou Network Boot)
+- Le panneau d'administration
+- iPXE (ou Network Boot)
 
 Le panneau d'Administration nous permet de lancer les taches de capture d'images, l'état de capture des ordinateurs, les statistiques de téléchargement des images sur des clients etc...
 
@@ -19,8 +19,7 @@ FOG comprend plusieurs utilitaires en son sein :
 - Une page WEB d'administration en PHP (installation de Nginx + modules PHP obligatoires).
 - Memtest86+ afin d'effectuer des diagnostics mémoire et de disque.
 
----
-
+***
 Pour faire fonctionner le serveur Fog il faut :
 
 - Un serveur DHCP. (ici, Ubuntu Server 24.04)
@@ -32,14 +31,13 @@ Pour déployer l'image d'un PC depuis le serveur FOG vers le PC en question, il 
 Pour capturer une image, il faut que la machine qui héberge le système hôte soit déjà enregistrée sur le serveur, on fait cela directement sur l'interface d'administration de FOG.
 
 <u>PS</u>: L'utilisation de deux machines physiques au lieu d'une me permettait une meilleure lisibilité sur mes services, mais la combinaison de DHCP+FOG sur une seule et unique machine et totalement possible (et conseillée par le développeur du serveur).
-
----
+***
 
 J'ai donc commencé le TP par la conception d'un schéma réseau (comme à l'accoutumée, sur le logiciel Packet Tracer)
 
 {{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS/sch_réseau-RDS2-FOG.png" alt="schéma réseau sur Packet Tracer Représentant deux machines virtuelles contenues dans un ordinateur principal, relié en réseau sur un serveur de diffusion d'adresses IP (DHCP) et sur le serveur FOG." position="center" style="border-radius: 8px;" caption="" captionPosition="right" captionStyle="color: black;" >}}
 
----
+***
 
 Une fois le schéma conçu, j'ai pu commencer l'installation du serveur DHCP (isc-dhcp-server) et celui de FOG afin de distribuer les baux sur les clients.
 
@@ -102,6 +100,9 @@ Une fois le DHCP configuré et FOG installé, plus besoin de toucher aux fichier
 On peut désormais capturer une machine depuis cette interface, celà nous donne ces images (ce sont des photos) :
 |{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS/FOG/Capture-FOG_1.jpg" alt="Première phase de capture" position="center" style="border-radius: 8px;" caption="Calcul de la taille de l'image." captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS/FOG/Capture-FOG_2.jpg" alt="Seconde phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la partition *FAT32* du périphérique hôte" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS/FOG/Capture-FOG_3.jpg" alt="Troisième phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la seconde partition" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS/FOG/Capture-FOG_4.jpg" alt="Dernière phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la partition principale en *NTFS* (512Go)" captionPosition="right" captionStyle="color: black;">}}|
 |-|-|-|-|
+La restoration des images sont les mêmes écrans qu'en haut, même interface.
 ***
-| <button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_2';">Précédent</button> | <button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_4';">Suivant</button> |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+Ce TP est donc **terminé**
+***
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_2';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_4';">Suivant</button>|
+|-|-|
