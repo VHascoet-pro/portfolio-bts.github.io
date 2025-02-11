@@ -43,7 +43,7 @@ Une fois le schéma conçu, j'ai pu commencer l'installation du serveur DHCP (is
 
 *Ce fichier de configuration n'est pas nécessaire si FOG à été installé avec le daemon DHCP intégré, cependant, il reste utile dans le cas ou le serveur à été installé à part.*
 
-{{<code language="cpp" title="extrait de /etc/dhcp/dhcpd.conf" id="1" expand="Montrer" collapse="Cacher" isCollapsed="true">}}
+{{<code language="cpp" title="extrait de /etc/dhcp/dhcpd.conf" id="1" expand="Montrer" collapse="Cacher" isCollapsed="false">}}
 option space PXE;
 option PXE.mtftp-ip        code 1 = ip-adress;
 option PXE.mtftp-cport     code 2 = unsigned integer 16;

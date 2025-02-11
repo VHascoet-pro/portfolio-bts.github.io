@@ -15,7 +15,7 @@ Sur cette image de couverture du jeu, on y voit une capture d'écran du jeu, on 
 
 C'est également le tout premier moteur de jeux à utiliser le langage **C** pour son developpement, comme le langage était encore sous-documenté, John Carmack à dû créer des fonctions uniques à ce langage, dont une fonction permettant de calculer une racine carrée inverse, la voici :
 
-{{<code language="c" title="La racine carrée inverse rapide sur Quake III" id="1" expand="Montrer" collapse="Cacher" isCollapsed="true">}}
+{{<code language="c" title="La racine carrée inverse rapide sur Quake III" id="1" expand="Montrer" collapse="Cacher" isCollapsed="false">}}
 float Q_rsqrt( float number ){
 long i;
 float x2, y;
@@ -41,7 +41,7 @@ return y;
 
 Il s'agit d'une fonction qui s'avèrera 4 fois plus rapide que la fonction
 
-{{<code language="c" title="" id="1" expand="Montrer" collapse="Cacher" isCollapsed="true">}}
+{{<code language="c" title="" id="1" expand="Montrer" collapse="Cacher" isCollapsed="false">}}
 (float) 1.0/sqrt(x)
 {{</code>}}
 
