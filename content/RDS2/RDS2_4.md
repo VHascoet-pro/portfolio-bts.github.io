@@ -12,7 +12,7 @@ Création d'un site web pour les portes ouvertes de l'IUT de Quimper.
     * La description des formations proposées
     * Les actualités
 * Il doit être sécurisé (HTTPS + Certificats)
-* Il doit être <u>archivable</u>
+* Il doit être *<u>archivable</u>*
 
 <u>*PS*: Je ne préciserai pas les attributs techniques du serveur car il va être publiquement accessible, donc pour des raisons de sécurité, je ne les mettrais pas ici jusqu'à la fin des portes ouvertes, auquel cas je mettrais les informations manquantes car le serveur deviendra inactif.</u>
 ### Spécifications techniques
@@ -30,20 +30,20 @@ Le site sera hébergé sur Wordpress (pour sa facilité de mise en service et d'
 # Mise en oeuvre
 Pour Commencer, j'ai installé Windows Server 2022 et les paquets .NET Redistributables nécessaires au bon fonctionnement de Wamp Server (et donc, du site).
 Par la suite, j'ai installé Wamp Server et commencé à configurer plusieurs choses :
-- La base de données pour Wordpress
-- Les hôtes virtuels
-- Le fichier Host
+- La base de données pour Wordpress.
+- Les hôtes virtuels.
+- Le fichier Host.
 - Les clés de chiffrement et certificats (via Let's Encrypt) afin de sécuriser et d'authentifier le site en HTTPS.
-- Les intégrations des extentions de httpd afin de prendre en compte le SSL et le HTTPS
+- Les intégrations des extentions de httpd afin de prendre en compte le SSL et le HTTPS.
 
-|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_bdd.png" alt="Base de donnée de wordpress intégrée via PhPmyAdmin" position="center" style="border-radius: 8px;" caption="La Base de Données *wordpress* intégrée via phpmyadmin" captionPosition="right" captionStyle="color: black;" >}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_vhosts.png" alt="Configuration des hôtes virtuels" position="center" style="border-radius: 8px;" caption="Configuration des hôtes virtuels" captionPosition="right" captionStyle="color: black;" >}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_hosts.png" alt="Description du fichier Hosts" position="center" style="border-radius: 8px;" caption="Le fichier Hosts modifié (avec censure *temporaire* de l'adresse IP)" captionPosition="right" captionStyle="color: black;" >}}|
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_bdd.png" alt="Base de donnée de wordpress intégrée via PhPmyAdmin" position="center" style="border-radius: 8px;" caption="La Base de Données *wordpress* intégrée via phpmyadmin" captionPosition="right" captionStyle="color: black;" height="640" width="480" >}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_vhosts.png" alt="Configuration des hôtes virtuels" position="center" style="border-radius: 8px;" caption="Configuration des hôtes virtuels" captionPosition="right" captionStyle="color: black;" height="640" width="480">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_hosts.png" alt="Description du fichier Hosts" position="center" style="border-radius: 8px;" caption="Le fichier Hosts modifié (avec censure *temporaire* de l'adresse IP)" captionPosition="right" captionStyle="color: black;" height="640" width="480">}}|
 |-|-|-|
 
-|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_SSL.png" alt="Description des hôtes virtuels pour le SSL" position="center" style="border-radius: 8px;" caption="Description des hôtes virtuels pour le SSL et le HTTPS" captionPosition="right" captionStyle="color: black;" >}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_pemfiles.png" alt="Fichiers PEM pour le chiffrement du site" position="center" style="border-radius: 8px;" caption="Les fichiers **PEM** pour la clé et le certificat du site" captionPosition="right" captionStyle="color: black;" >}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_encrypt.png" alt="Photo présentant le menu principal de l'application Let's Encrypt" position="center" style="border-radius: 8px;" caption="Capture d'écran du menu principal de l'application Let's Encrypt" captionPosition="right" captionStyle="color: black;" >}}|
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_SSL.png" alt="Description des hôtes virtuels pour le SSL" position="center" style="border-radius: 8px;" caption="Description des hôtes virtuels pour le SSL et le HTTPS" captionPosition="right" captionStyle="color: black;" height="640" width="480">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_pemfiles.png" alt="Fichiers PEM pour le chiffrement du site" position="center" style="border-radius: 8px;" caption="Les fichiers **PEM** pour la clé et le certificat du site" captionPosition="right" captionStyle="color: black;" height="640" width="480">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_encrypt.png" alt="Photo présentant le menu principal de l'application Let's Encrypt" position="center" style="border-radius: 8px;" caption="Capture d'écran du menu principal de l'application Let's Encrypt" captionPosition="right" captionStyle="color: black;" height="640" width="480">}}|
 |-|-|-|
 ***
 Pour une bonne configuration de Wamp Server afin qu'il puisse accepter le HTTPS, il ne fallait pas oublier cette option :
-|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_wampHTTPS.png" alt="Capture représentant le sous menu de WAMPServer, il montre ces deux options : 1) Wampserver prêt pour supporter https. 2) Autoriser HTTPS pour localhost" position="center" style="border-radius: 8px;" caption="Les deux options nécessaires au bon fonctionnement de l'HTTPS" captionPosition="right" captionStyle="color: black;">}}|
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_wampHTTPS.png" alt="Capture représentant le sous menu de WAMPServer, il montre ces deux options : 1) Wampserver prêt pour supporter https. 2) Autoriser HTTPS pour localhost" position="center" style="border-radius: 8px;" caption="Les deux options nécessaires au bon fonctionnement de l'HTTPS" captionPosition="right" captionStyle="color: black;" height="640" width="480">}}|
 |-|
 
 # Conclusion
