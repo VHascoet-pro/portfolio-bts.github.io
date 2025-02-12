@@ -36,7 +36,7 @@ J'ai travaillé pendant 1 an et demi en tant que [Level Designer](https://vhasco
 |:---:|:---:|:---:|
 |CV|Lettre de Motivation|Tableau de Synthèse|
 ***
-### - Je peux également vous proposer ma _[Veille technologique](https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille)_, mon _[Rapport de Stage](https://vhasoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_1)_ de ma première année de BTS et également mon _[Rapport de Stage](https://vhasoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_1)_ de ma seconde et dernière année de BTS.
+### - Je peux également vous proposer ma _[Veille technologique](https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille)_, mon _[Rapport de Stage](https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_1)_ de ma première année de BTS et également mon _[Rapport de Stage](https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_1)_ de ma seconde et dernière année de BTS.
 ***
 J'ai intégralement mis en oeuvre ce site web en l'hébergeant (au début) sur ma propre box à l'adresse suivante (lien invalide) : <http://vincent-hascoet.free.nf>
 ***

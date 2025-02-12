@@ -32,6 +32,9 @@ Pour Commencer, j'ai installé Windows Server 2022 et les paquets .NET Redistrib
 Par la suite, j'ai installé Wamp Server et commencé à configurer plusieurs choses :
 - La base de données pour Wordpress
 - Les hôtes virtuels
+
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_bdd.png" alt="Base de donnée de wordpress intégrée via PhPmyAdmin" position="center" style="border-radius: 8px;" caption="La Base de Données *wordpress* intégrée via phpmyadmin" captionPosition="right" captionStyle="color: black;" >}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_vhosts.png" alt="Configuration des hôtes virtuels" position="center" style="border-radius: 8px;" caption="Configuration des hôtes virtuels" captionPosition="right" captionStyle="color: black;" >}}|
+|-|-|
 ## Conclusion
 [Lien](https://portesouvertes-iutq.univ-brest.fr) vers la page web.
 ***
