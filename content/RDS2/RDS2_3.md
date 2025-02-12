@@ -35,7 +35,7 @@ Pour capturer une image, il faut que la machine qui héberge le système hôte s
 
 J'ai donc commencé le TP par la conception d'un schéma réseau (comme à l'accoutumée, sur le logiciel Packet Tracer)
 
-{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/sch_réseau-RDS2-FOG.png" alt="schéma réseau sur Packet Tracer Représentant deux machines virtuelles contenues dans un ordinateur principal, relié en réseau sur un serveur de diffusion d'adresses IP (DHCP) et sur le serveur FOG." position="center" style="border-radius: 8px;" caption="" captionPosition="right" captionStyle="color: black;" >}}
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/sch_réseau-RDS2-FOG.png" alt="schéma réseau sur Packet Tracer Représentant deux machines virtuelles contenues dans un ordinateur principal, relié en réseau sur un serveur de diffusion d'adresses IP (DHCP) et sur le serveur FOG." position="center" style="border-radius: 8px;" caption="" captionPosition="right" captionStyle="color: black;" >}}
 
 ***
 
@@ -98,8 +98,11 @@ Une fois le DHCP configuré et FOG installé, plus besoin de toucher aux fichier
 {{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/2025-01-13_10-52.png" alt="Menu principal de FOG : Montrant le tableau de bord." position="center" style="border-radius: 8px;" caption="Tableau de bord de FOG" captionPosition="right" captionStyle="color: black;">}}
 ***
 On peut désormais capturer une machine depuis cette interface, celà nous donne ces images (ce sont des photos) :
-|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_1.jpg" alt="Première phase de capture" position="center" style="border-radius: 8px;" caption="Calcul de la taille de l'image." captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_2.jpg" alt="Seconde phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la partition *FAT32* du périphérique hôte" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_3.jpg" alt="Troisième phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la seconde partition" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_4.jpg" alt="Dernière phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la partition principale en *NTFS* (512Go)" captionPosition="right" captionStyle="color: black;">}}|
-|-|-|-|-|
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_1.jpg" alt="Première phase de capture" position="center" style="border-radius: 8px;" caption="Calcul de la taille de l'image." captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_2.jpg" alt="Seconde phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la partition *FAT32* du périphérique hôte" captionPosition="right" captionStyle="color: black;">}}|
+|-|-|
+
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_3.jpg" alt="Troisième phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la seconde partition" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_4.jpg" alt="Dernière phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la partition principale en *NTFS* (512Go)" captionPosition="right" captionStyle="color: black;">}}|
+|-|-|
 
 La restoration des images sont les mêmes écrans qu'en haut, même interface.
 ***
