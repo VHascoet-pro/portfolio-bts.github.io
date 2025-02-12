@@ -100,6 +100,7 @@ Une fois le DHCP configuré et FOG installé, plus besoin de toucher aux fichier
 On peut désormais capturer une machine depuis cette interface, celà nous donne ces images (ce sont des photos) :
 |{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_1.jpg" alt="Première phase de capture" position="center" style="border-radius: 8px;" caption="Calcul de la taille de l'image." captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_2.jpg" alt="Seconde phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la partition *FAT32* du périphérique hôte" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_3.jpg" alt="Troisième phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la seconde partition" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_4.jpg" alt="Dernière phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la partition principale en *NTFS* (512Go)" captionPosition="right" captionStyle="color: black;">}}|
 |-|-|-|-|
+
 La restoration des images sont les mêmes écrans qu'en haut, même interface.
 ***
 Ce TP est donc **terminé**
