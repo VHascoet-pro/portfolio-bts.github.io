@@ -28,7 +28,8 @@ Il fallait donc un système d'exploitation accessible à tous (donc graphique) e
 
 Le site sera hébergé sur Wordpress (pour sa facilité de mise en service et d'usage).
 # Mise en oeuvre
-Pour Commencer, j'ai installé Windows Server 2022 et les paquets .NET Redistributables nécessaires au bon fonctionnement de Wamp Server (et donc, du site).
+### WAMP Server (Windows / Apache / MySql | MaraiDB / PHP)
+Pour commencer, j'ai installé Windows Server 2022 et les paquets .NET Redistributables nécessaires au bon fonctionnement de Wamp Server (et donc, du site).
 Par la suite, j'ai installé Wamp Server et commencé à configurer plusieurs choses :
 - La base de données pour Wordpress.
 - Les hôtes virtuels.
@@ -45,9 +46,12 @@ Par la suite, j'ai installé Wamp Server et commencé à configurer plusieurs ch
 Pour une bonne configuration de Wamp Server afin qu'il puisse accepter le HTTPS, il ne fallait pas oublier cette option :
 |{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_wampHTTPS.png" alt="Capture représentant le sous menu de WAMPServer, il montre ces deux options : 1) Wampserver prêt pour supporter https. 2) Autoriser HTTPS pour localhost" position="center" style="border-radius: 8px;" caption="Les deux options nécessaires au bon fonctionnement de l'HTTPS" captionPosition="right" captionStyle="color: black;">}}|
 |-|
+### Wordpress
+Une fois WAMP et Wordpress installé, il faut maintenant configurer Wordpress.
+Pour des raisons de confidentialité et de sécurité, je ne partagerai pas la configuration précise du fichier PHP tant que le serveur est encore en fonction
 
 # Conclusion
-[Lien](https://web.archive.org/web/20250212105651/https://portesouvertes-iutq.univ-brest.fr/) vers la page web (Archive Wayback Machine).
+[Lien](https://portesouvertes-iutq.univ-brest.fr) vers la page web.
 ***
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_3';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io'">Retour à l'accueil</button>|
 |-|-|
