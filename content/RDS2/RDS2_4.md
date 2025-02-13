@@ -49,5 +49,7 @@ Pour une bonne configuration de Wamp Server afin qu'il puisse accepter le HTTPS,
 ### Wordpress
 Une fois WAMP et Wordpress installé, il faut maintenant configurer Wordpress.
 ***
+Maintenant que Wordpress est configuré, il faut commencer à conçevoir la page.
+***
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_3';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io'">Retour à l'accueil</button>|
 |-|-|
