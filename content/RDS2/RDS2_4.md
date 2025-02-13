@@ -48,7 +48,7 @@ Pour une bonne configuration de Wamp Server afin qu'il puisse accepter le HTTPS,
 |-|
 ### Wordpress
 Une fois WAMP et Wordpress installé, il faut maintenant configurer Wordpress.
-Pour des raisons de confidentialité et de sécurité, je ne partagerai pas la configuration précise du fichier PHP tant que le serveur est encore en fonction
+
 
 # Conclusion
 [Lien](https://portesouvertes-iutq.univ-brest.fr) vers la page web.
