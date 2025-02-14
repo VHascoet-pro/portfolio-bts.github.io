@@ -64,15 +64,15 @@ Antivirus :
 
 ## IDE
 - Suite Jetbrains
-    - JetBrains CLion
-    - JetBrains Pycharm (Community)
-    - JetBrains PHPstorm
+    - [JetBrains CLion](https://www.jetbrains.com/fr-fr/clion/)
+    - [JetBrains Pycharm](https://www.jetbrains.com/fr-fr/pycharm/)
+    - [JetBrains PHPstorm](https://www.jetbrains.com/fr-fr/phpstorm/)
 
 - Visual Studio Code
-    - VSCode 2022
-    - Visual Code OSS
+    - [VSCode 2022](https://visualstudio.microsoft.com/fr/vs/)
+    - [Visual Code OSS](https://github.com/microsoft/vscode)
 
-- GitHub
+- [GitHub](https://github.com)
 
 - Gnome Builder
 
