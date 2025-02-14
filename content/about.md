@@ -2,7 +2,7 @@
 title: "A propos"
 ---
 ***
-|[![Photo de profil](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/photo.jpg)](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/photo.jpg)|Je m'appelle Vincent Hascoët, j'ai actuellement 19 ans et je suis étudiant à Quimper au Lycée Technologique Jean Chaptal en BTS SIO option SISR (Solutions d'Infrastructure, Systèmes et Réseaux).<br><br>J'ai commencé à apprendre l'informatique et l'audiovisuel dans sa généralité à partir de mes 13 ans à mes dépends (grâce aux ordinateurs réservés aux membres du club vidéo dans mon collège).<br><br>J'ai pour projet de devenir un Ingénieur Cyberdéfence en alternance afin d'obtenir un poste dans la sécurité des services d'information chez IBM, Thalès ou également chez Valve|
+|[![Photo de profil](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/photo.jpg)](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/photo.jpg)|Je m'appelle Vincent Hascoët, j'ai actuellement 19 ans et je suis étudiant à Quimper au Lycée Technologique Jean Chaptal en BTS SIO option SISR (Solutions d'Infrastructure, Systèmes et Réseaux). J'ai pour projet de devenir un Ingénieur Cyberdéfence en alternance afin d'obtenir un poste dans la sécurité des services d'information chez IBM, Thalès ou également chez Valve.<br><br>J'ai commencé à apprendre l'informatique et l'audiovisuel dans sa généralité à partir de mes 13 ans à mes dépends (grâce aux ordinateurs réservés aux membres du club vidéo dans mon collège).<br><br>Disposant d'une grande capacité de remise en question, je suis extrêmement adaptatif à mon environnement et je ssuis capable de faire face à un grand panel de problèmes, si je ne connais pas la solution, je connais beaucoup méthodes pour récolter de l'information et une bonne méthodologie pour mettre à plat ce dont j'ai besoin.|
 |:---:|:---:|
 
 ***
@@ -33,6 +33,8 @@ Au cours de mes 4 années (et demi) de formation, j'ai eu l'occasion de fairs di
 |<div align="center">[![CV](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/CV_Vincent_Hascoet.pdf)</div>|<div align="center">[![Lettre de motivation](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/Lettre_de_Motivation_Vincent_Hascoet.pdf)</div>|<div align="center">[![Tableau de synthèse](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/pdf.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/docs/BTS_SIO_-_Tableau_de_synthese_-_Hascoet_Vincent.pdf)</div>|
 |:---:|:---:|:---:|
 |CV|Lettre de Motivation|Tableau de Synthèse|
+***
+Sur [Cette Page](https://vhascoet-pro.github.io/portfolio-bts.github.io/outils), je présenterai les outils que j'utilise au quotidien afin de me renseigner ou me sécuriser au maximum
 ***
 ### - Je peux également vous proposer ma _[Veille technologique](https://vhascoet-pro.github.io/portfolio-bts.github.io/veille/veille)_, mon _[Rapport de Stage](https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_1)_ de ma première année de BTS et également mon _[Rapport de Stage](https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_1)_ de ma seconde et dernière année de BTS.
 ***
