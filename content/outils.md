@@ -27,7 +27,7 @@ Les distributions que j'ai pu utiliser (dans le passé et actuellement), *chaque
 - [Kali Linux](https://www.kali.org) (pour effectuer des Pentests)
 
 Les Windows que j'ai pu utiliser :
-- Windows 3.11, 95, 98, 98SE, 2000 et XP (pour la curiosité et la remise en marche d'anciens ordinateurs sous DOS ou simplement pour tester sur des machines virtuelles *Mais rien ne vaut du véritable matériel*)
+- [Windows 3.11, 95, 98, 98SE, 2000](https://winworldpc.com/library/operating-systems) et XP (pour la curiosité et la remise en marche d'anciens ordinateurs sous DOS ou simplement pour tester sur des machines virtuelles *Mais rien ne vaut du véritable matériel*)
 
 - Windows 7
     - Windows Server 2008 (pour la curiosité sur un ancien IBM xServer)
@@ -42,7 +42,7 @@ Les Windows que j'ai pu utiliser :
     - Windows Server 2016 (Le serveur que j'ai le plus vu en stage)
     - Windows Server 2022 (Serveur utilisé assez souvent pour mes TP en BTS)
 
-- Windows 11
+- [Windows 11](https://www.microsoft.com/fr-fr/windows/windows-11?r=1)
     - Windows Server 2025 (Pour faire des essais)
 
 ## Outils de sécurité
