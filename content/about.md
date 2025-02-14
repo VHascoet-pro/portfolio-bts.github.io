@@ -2,7 +2,7 @@
 title: "A propos"
 ---
 ***
-|[![Photo de profil](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/photo.jpg)](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/photo.jpg)|Je m'appelle Vincent Hascoët, j'ai actuellement 19 ans et je suis étudiant à Quimper au Lycée Technologique Jean Chaptal en BTS SIO option SISR.<br><br>J'ai commencé à apprendre l'informatique et l'audiovisuel dans sa généralité à partir de mes 13 ans à mes dépends (grâce aux ordinateurs réservés aux membres du club vidéo dans mon collège).<br><br>J'ai pour projet de devenir un Ingénieur Cyberdéfence en alternance afin d'obtenir un poste dans la sécurité des services d'information chez IBM, Thalès ou également chez Valve|
+|[![Photo de profil](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/photo.jpg)](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/photo.jpg)|Je m'appelle Vincent Hascoët, j'ai actuellement 19 ans et je suis étudiant à Quimper au Lycée Technologique Jean Chaptal en BTS SIO option SISR (Solutions d'Infrastructure, Systèmes et Réseaux).<br><br>J'ai commencé à apprendre l'informatique et l'audiovisuel dans sa généralité à partir de mes 13 ans à mes dépends (grâce aux ordinateurs réservés aux membres du club vidéo dans mon collège).<br><br>J'ai pour projet de devenir un Ingénieur Cyberdéfence en alternance afin d'obtenir un poste dans la sécurité des services d'information chez IBM, Thalès ou également chez Valve|
 |:---:|:---:|
 
 ***
@@ -13,8 +13,6 @@ J'ai fait mes études de lycée au [Lycée Professionnel Émile Zola](https://ww
 Je suis actuellement en Seconde Année de BTS SIO au [Lycée Technologique Jean Chaptal à Quimper](https://www.lycee-chaptal.fr) à Quimper, au Finistère
 
 Au cours de mes 4 années (et demi) de formation, j'ai eu l'occasion de fairs divers stages en entreprise et j'ai pu acquérir une certaine maitrîse en ce qui concerne la maintenance informatique, l'installation et la configuration de serveurs.
-
-J'ai travaillé pendant 1 an et demi en tant que [Level Designer](https://vhascoet-pro.github.io/portfolio-bts.github.io/level_designer) en télétravail au studio [NightDive Studios](https://vhascoet-pro.github.io/portfolio-bts.github.io/nightdive/) basé à Toronto, au Canada.
 ***
 ### - _Stages effectués_
 ***

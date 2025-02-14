@@ -90,5 +90,5 @@ Après avoir connecté mon client Linux physique sur le VLAN 15, j'ai pu connect
 Le labo est finalement **terminé**.
 
 ***
-|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_2';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_4';">Suivant</button>|
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_2';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/';">Retour à l'accueil</button>|
 |-|-|
