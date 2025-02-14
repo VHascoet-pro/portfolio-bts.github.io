@@ -9,21 +9,22 @@ Ayant adopté Linux depuis 2021, j'utilise principalement des distributions Linu
 
 Les distributions que j'ai pu utiliser (dans le passé et actuellement), *chaque version à son lien cliquable*:
 - Linux Mint (Cinnamon)
-    - 21.* "Vera"
-    - 22 "Wilma" et 22.1 "Xia"
+    - [21.* "Vera"](https://www.linuxmint.com/rel_vanessa_cinnamon_whatsnew.php)
+    - [22 "Wilma" et 22.1 "Xia"](https://www.linuxmint.com/rel_wilma_whatsnew.php)
 - Ubuntu (GNOME et CLI)
-    - 22.04
+    - [22.04](https://releases.ubuntu.com/jammy/)
         - Server 22.04 (pour mes études)
-    - 23.04
-    - 24.04
+    - [23.04](https://ubuntu.com/blog/ubuntu-desktop-23-04-release-roundup)
+    - [24.04](https://releases.ubuntu.com/noble/)
         - Server 24.04 (Personnellement et pour les études)
-- Arch Linux
+- [Arch Linux](https://archlinux.fr)
     - Arch Linux classique (i3wm et Hyprland plus tard)
     - Arch Linux Server
-    - Manjaro (Cinnamon, *ma distribution préférée, celle que j'utilise actuellement pour écrire cette page*)
-- Debian
+    - [Manjaro](https://manjaro.org) (Cinnamon, *ma distribution préférée, celle que j'utilise actuellement pour écrire cette page*)
+- [Debian](https://www.debian.org)
     - Debian 12 + GNOME 43.4
-- Fedora Server (utilisé pour un seul TP en BAC PRO, l'interface web est très utile)
+- [Fedora Server](https://fedoraproject.org/server/) (utilisé pour un seul TP en BAC PRO, l'interface web est très utile)
+- [Kali Linux](https://www.kali.org) (pour effectuer des Pentests)
 
 Les Windows que j'ai pu utiliser :
 - Windows 3.11, 95, 98, 98SE, 2000 et XP (pour la curiosité et la remise en marche d'anciens ordinateurs sous DOS ou simplement pour tester sur des machines virtuelles *Mais rien ne vaut du véritable matériel*)
@@ -103,22 +104,24 @@ Antivirus :
 
 # Outils Divers (pour mes projets personnels)
 ## Montage
-- Audacity (Audio)
-- GoldWave (Audio)
+- Audacity (Audio splicer)
+- GoldWave (Audio splicer)
 
-- KDEnlive
-- Lightworks
+- KDEnlive (Montage Video)
+- Lightworks (Montage Vidéo)
+
+- Houdini (Modélisation 3D et Simulations de physique pour des Animations / Jeux etc...)
 
 ## Composition
-<u>Trackers :</u>
-- FastTracker II
-- OpenMPT
-- Renoise
+- Trackers :
+    - FastTracker II
+    - OpenMPT
+    - Renoise
 
-<u>DAWs (Digital Audio Workstation) :</u>
-- Ableton
+DAWs (Digital Audio Workstation) :
+    - Ableton
 
 ## Game Dev et Level Design
 - Unreal Engine 3 et 4 (Epic Games)
 - GoldSrc et Source² (VALVE)
-- Autodesk Stingrey (juste pour tester)
+- Autodesk Stingrey (juste pour essayer avant la fermeture des serveurs)
