@@ -47,20 +47,20 @@ Les Windows que j'ai pu utiliser :
 
 ## Outils de sécurité
 Pour le chiffrement de documents et la gestion de mes clés :
-- Kleopatra
-- KGPG
-- OpenStego
+- [Kleopatra](https://apps.kde.org/fr/kleopatra/)
+- [KGPG](https://apps.kde.org/fr/kgpg/)
+- [OpenStego](https://www.openstego.com)
 
 Pour la gestion de mot de passes :
-- Dashlane (n'est plus utilisé mais je le mentionne)
-- Bitwarden
+- [Dashlane](https://www.dashlane.com/fr) (n'est plus utilisé mais je le mentionne)
+- [Bitwarden](https://bitwarden.com)
 
 Antivirus :
-- Avast (nan je rigole)
-- ClamAV
-- ESET
-- ZHPCleaner
-- AdwCleaner
+- [Avast](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [ClamAV](https://www.clamav.net)
+- [ESET](https://www.eset.com/fr/)
+- [ZHPCleaner](https://nicolascoolman.eu/download/zhpcleaner-gratuit/)
+- [Malwerebytes AdwCleaner](https://www.malwarebytes.com/fr/adwcleaner)
 
 ## IDE
 - Suite Jetbrains
