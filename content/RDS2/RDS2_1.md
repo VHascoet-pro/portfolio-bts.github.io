@@ -2,9 +2,10 @@
 title: "Première partie du rapport de Stage"
 ---
 ## Présentation
-L'IUT de Quimper est composé de plusieurs bâtiments, les bâtiments A, B, C, D et E.
+J'ai effectué ma période de Stage à l'IUT de Quimper
 
-On m'à intégré dans le bâtiment A et D, ce sont les bâtiments principaux comportant l'accueil et l'ÉSIAB (École Supérieure d'Ingénieurs en Agroalimentaire de Bretagne Atlantique).
+L'IUT de Quimper est un institut qui fonctionne en tandem de L'UBO (Université de Bretagne Occidentale)
+L'IUT à accueilli cette année plus de 1 400 élèves et 
 
 Ma période de stage se situait principalement dans le Bâtiment A, car c'est ici que se concentre la majorité des bureaux de l'administration, la bibliothèque universitaire et plusieurs salles de cours.
 
