@@ -28,7 +28,7 @@ Il fallait donc un système d'exploitation accessible à tous (donc graphique) e
 
 Le site sera hébergé sur Wordpress (pour sa facilité de mise en service et d'usage).
 # Mise en oeuvre
-### WAMP Server (Windows / Apache / MySql | MaraiDB / PHP)
+### WAMP Server (Windows / Apache / MySql | MariaDB / PHP)
 Pour commencer, j'ai installé Windows Server 2022 et les paquets .NET Redistributables nécessaires au bon fonctionnement de Wamp Server (et donc, du site).
 Par la suite, j'ai installé Wamp Server et commencé à configurer plusieurs choses :
 - La base de données pour Wordpress.
