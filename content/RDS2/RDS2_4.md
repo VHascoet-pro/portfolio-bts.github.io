@@ -57,8 +57,9 @@ Maintenant que Wordpress est configuré, il faut commencer à conçevoir la page
 
 Pour conçevoir la page WEB, je me suis muni de deux documents, le premier (en haut) comporte le plan de l'IUT ainsi que la légende du plan, le second (les deux en bas) est le prototype papier du design du site.
 |{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_plan.png" alt="" position="center" style="border-radius: 8px;" caption="" captionPosition="right" captionStyle="color: black;" height="400" width="400">}}|
-|-|-|-|
-|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_proto1.png" alt="" position="center" style="border-radius: 8px;" caption="Prototype du Design / Page 1" captionPosition="right" captionStyle="color: black;" height="400" width="400">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_proto2.png" alt="C" position="center" style="border-radius: 8px;" caption="Prototype de design / Page 2" captionPosition="right" captionStyle="color: black;" height="400" width="400">}}|
+|-|
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_proto1.png" alt="" position="center" style="border-radius: 8px;" caption="Prototype du Design / Page 1" captionPosition="right" captionStyle="color: black;" height="400" width="400">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_proto2.png" alt="" position="center" style="border-radius: 8px;" caption="Prototype de design / Page 2" captionPosition="right" captionStyle="color: black;" height="400" width="400">}}|
+|-|-|
 
 ***
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_3';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io'">Retour à l'accueil</button>|
