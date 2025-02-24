@@ -1,66 +1,112 @@
 ---
-title: "Création d'un site Web pour l'IUT de Quimper"
+title: "Troisième Partie - Installation de FOG"
 ---
-# But
-Création d'un site web pour les portes ouvertes de l'IUT de Quimper.
-# Cahier des charges
-* Le site doit être responsive
-* Il doit être intuitif
-* Il doit afficher :
-    * La carte de l'IUT avec des hotspots où l'on va voir les différents points d'intérêt de la journée portes ouvertes.
-    * Un planning des conférences
-    * La description des formations proposées
-    * Les actualités
-* Il doit être sécurisé (HTTPS + Certificats)
-* Il doit être *<u>archivable</u>*
+#### <u>Fonctionnement de FOG</u>
 
-<u>*PS*: Je ne préciserai pas les attributs techniques du serveur car il va être publiquement accessible, donc pour des raisons de sécurité, je ne les mettrais pas ici jusqu'à la fin des portes ouvertes, auquel cas je mettrais les informations manquantes car le serveur deviendra inactif.</u>
-### Spécifications techniques
-J'ai opté pour l'installation de Wamp Server sur Windows Server 2022 Standard.
+FOG est un serveur de déploiement d'images qui est accessible par deux moyens :
 
-## <u>Pourquoi ?</u>
+- Le panneau d'administration
+- iPXE (ou Network Boot)
 
-Comme les portes ouvertes (et donc par conséquent, le site) se passera après la fin de ma période de stage, le 1er Mars. 
+Le panneau d'Administration nous permet de lancer les taches de capture d'images, l'état de capture des ordinateurs, les statistiques de téléchargement des images sur des clients etc...
 
-Il fallait un système permettant à n'importe qui, des services concernés par l'administration des portes ouvertes, de pouvoir à la fois administrer le site de l'extérieur <mark>mais également</mark> de l'intérieur (depuis le serveur donc).
+iPXE nous permet de booter sur FOG en tant que client ou hôte afin de pouvoir s'enregisrer, capturer, déployer les images et effectuer des tests d'intégrité du PC (avec l'outil Memtest86+).
 
-Il fallait donc un système d'exploitation accessible à tous (donc graphique) et où tout le monde peut facilement se retrouver (du Windows Server donc, pas du Linux).
+FOG comprend plusieurs utilitaires en son sein :
 
-Le site sera hébergé sur Wordpress (pour sa facilité de mise en service et d'usage).
-# Mise en oeuvre
-### WAMP Server (Windows | Apache | MySql / MariaDB | PHP)
-Pour commencer, j'ai installé Windows Server 2022 et les paquets .NET Redistributables nécessaires au bon fonctionnement de Wamp Server (et donc, du site).
-Par la suite, j'ai installé Wamp Server et commencé à configurer plusieurs choses :
-- La base de données pour Wordpress.
-- Les hôtes virtuels.
-- Le fichier Host.
-- Les clés de chiffrement et certificats (via Let's Encrypt) afin de sécuriser et d'authentifier le site en HTTPS.
-- Les intégrations des extentions de httpd afin de prendre en compte le SSL et le HTTPS.
+- Un serveur TFTP afin de déployer les images.
+- Un serveur DHCP optionnel (j'ai découvert plus tard qu'il était possible de le configurer, je ne l'ai pas fait [Détails en bas de page]).
+- Une page WEB d'administration en PHP (installation de Nginx + modules PHP obligatoires).
+- Memtest86+ afin d'effectuer des diagnostics mémoire et de disque.
 
-|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_bdd.png" alt="Base de donnée de wordpress intégrée via PhPmyAdmin" position="center" style="border-radius: 8px;" caption="La Base de Données *wordpress* intégrée via phpmyadmin" captionPosition="right" captionStyle="color: black;" height="400" width="400">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_vhosts.png" alt="Configuration des hôtes virtuels" position="center" style="border-radius: 8px;" caption="Configuration des hôtes virtuels" captionPosition="right" captionStyle="color: black;" height="400" width="400">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_hosts.png" alt="Description du fichier Hosts" position="center" style="border-radius: 8px;" caption="Le fichier Hosts modifié (avec censure *temporaire* de l'adresse IP)" captionPosition="right" captionStyle="color: black;" height="400" width="400">}}|
-|-|-|-|
-
-|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_SSL.png" alt="Description des hôtes virtuels pour le SSL" position="center" style="border-radius: 8px;" caption="Description des hôtes virtuels pour le SSL et le HTTPS" captionPosition="right" captionStyle="color: black;" height="400" width="400">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-encrypt/cap_pemfiles.png" alt="Fichiers PEM pour le chiffrement du site" position="center" style="border-radius: 8px;" caption="Les fichiers **PEM** pour la clé et le certificat du site" captionPosition="right" captionStyle="color: black;" height="400" width="400">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-encrypt/cap_encrypt.png" alt="Photo présentant le menu principal de l'application Let's Encrypt" position="center" style="border-radius: 8px;" caption="Capture d'écran du menu principal de l'application Let's Encrypt" captionPosition="right" captionStyle="color: black;" height="400" width="400">}}|
-|-|-|-|
 ***
-Pour une bonne configuration de Wamp Server afin qu'il puisse accepter le HTTPS, il ne fallait pas oublier cette option :
-|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_wampHTTPS.png" alt="Capture représentant le sous menu de WAMPServer, il montre ces deux options : 1) Wampserver prêt pour supporter https. 2) Autoriser HTTPS pour localhost" position="center" style="border-radius: 8px;" caption="Les deux options nécessaires au bon fonctionnement de l'HTTPS" captionPosition="right" captionStyle="color: black;">}}|
-|-|
-### Wordpress
-Une fois WAMP et Wordpress installé, il faut maintenant configurer Wordpress.
+Pour faire fonctionner le serveur Fog il faut :
 
-|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/cap_wp-config.png" alt="Capture d'écran de la configuration de la base de donnée sur les fichiers de configurations de wordpress. Ici, on y voit toutess les informations générales du site (Nom de la base de données / mot de passe de celle-ci : nom d'hôte de la base de donnée : ici localhost car elle est sur le même ordinateur / l'encodage de la base de donnée)" position="center" style="border-radius: 8px;" caption="Capture d'écran du fichier de configuration de wp-config (Configuration de Wordpress)" captionPosition="right" captionStyle="color: black;" height="400" width="400">}}|
-|-|
-Oui, c'est absolument tout ce dont on à besoin pour pouvoir configurer Wordpress, outre le nom d'utilisateur et le mot de passe du panneau d'administration à mettre en place. Or *pour des raisons de sécurité* je ne les mettrais pas ici tant que l'adresse et le site sont en production.
+- Un serveur DHCP. (ici, Ubuntu Server 24.04)
+- Le serveur FOG qu'il faut ensuite configurer. (un second Ubuntu Server 24.04)
+- Intégrer les machines sur l'interface de FOG pour pouvoir deployer ces images sur une machine cliente.
+
+Pour déployer l'image d'un PC depuis le serveur FOG vers le PC en question, il faut d'abord avoir capturé cette-dite image depuis soit une machine virtuelle, soit une machine physique que l'on aura configuré plus tôt.
+
+Pour capturer une image, il faut que la machine qui héberge le système hôte soit déjà enregistrée sur le serveur, on fait cela directement sur l'interface d'administration de FOG.
+
+<u>PS</u>: L'utilisation de deux machines physiques au lieu d'une me permettait une meilleure lisibilité sur mes services, mais la combinaison de DHCP+FOG sur une seule et unique machine et totalement possible (et conseillée par le développeur du serveur).
 ***
-Maintenant que Wordpress est configuré, il faut commencer à conçevoir la page.
 
-Pour conçevoir la page WEB, je me suis muni de deux documents, le premier (en haut) comporte le plan de l'IUT ainsi que la légende du plan, le second (les deux en bas) est le prototype papier du design du site.
-|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_plan.png" alt="" position="center" style="border-radius: 8px;" caption="" captionPosition="right" captionStyle="color: black;" height="640" width="240">}}|
-|-|
-|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_proto1.png" alt="" position="center" style="border-radius: 8px;" caption="Prototype du Design / Page 1" captionPosition="right" captionStyle="color: black;" height="640" width="240">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_proto2.png" alt="" position="center" style="border-radius: 8px;" caption="Prototype de design / Page 2" captionPosition="right" captionStyle="color: black;" height="640" width="240">}}|
+J'ai donc commencé le TP par la conception d'un schéma réseau (comme à l'accoutumée, sur le logiciel Packet Tracer)
+
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/sch_réseau-RDS2-FOG.png" alt="schéma réseau sur Packet Tracer Représentant deux machines virtuelles contenues dans un ordinateur principal, relié en réseau sur un serveur de diffusion d'adresses IP (DHCP) et sur le serveur FOG." position="center" style="border-radius: 8px;" caption="" captionPosition="right" captionStyle="color: black;" >}}
+
+***
+
+Une fois le schéma conçu, j'ai pu commencer l'installation du serveur DHCP (isc-dhcp-server) et celui de FOG afin de distribuer les baux sur les clients.
+
+*Ce fichier de configuration n'est pas nécessaire si FOG à été installé avec le daemon DHCP intégré, cependant, il reste utile dans le cas ou le serveur à été installé à part.*
+
+{{<code language="cpp" title="extrait de /etc/dhcp/dhcpd.conf" id="1" expand="Montrer" collapse="Cacher" isCollapsed="false">}}
+option space PXE;
+option PXE.mtftp-ip        code 1 = ip-adress;
+option PXE.mtftp-cport     code 2 = unsigned integer 16;
+option PXE.mtftp-sport     code 3 = unsigned integer 16;
+option PXE.mtftp-tmout     code 4 = unsigned integer 8;
+option PXE.mtftp-delay     code 5 = unsigned integer 8;
+option arch code 93 = unsigned integer 16;
+
+# Les lignes au dessus servent à assigner une série de codes en fonction de l'architecture trouvée lors du network boot.
+# Une fois les codes assignés, il faut desservir les fichiers *.efi aux BIOS/UEFI.
+# Les assignations des fichiers *.efi se font au même endroit que l'assignation des baux DHCP.
+
+subnet 172.168.1.0 netmask 255.255.55.0{
+    range dynamic-bootp 172.168.1.50 172.178.1.100;
+    option domain-name-servers 172.168.1.254;
+
+    class "UEFI-32-1" {
+        match if substring(option vendor-class-identifier, 0, 20) = "PXEClient:Arch:00006";
+        filename "i386-efi/ipxe.efi";
+    }
+    class "UEFI-32-2" {
+        match if substring(option vendor-class-identifier, 0, 20) = "PXEClient:Arch:00002";
+        filename "i386-efi/ipxe.efi";
+    }
+    class "UEFI-64-1" {
+        match if substring(option vendor-class-identifier, 0, 20) = "PXEClient:Arch:00007";
+        filename "ipxe.efi";
+    }
+    class "UEFI-64-2" {
+        match if substring(option vendor-class-identifier, 0, 20) = "PXEClient:Arch:00008";
+        filename "ipxe.efi";
+    }
+    class "UEFI-64-3" {
+        match if substring(option vendor-class-identifier, 0, 20) = "PXEClient:Arch:00009";
+        filename "ipxe.efi";
+    }
+    class "legacy" {
+        match if substring(option vendor-class-identifier, 0, 20) = "PXEClient:Arch:00000";
+        filename "undionly.kpxe";
+    }
+}
+{{</code>}}
+#### Spécificité des BIOS/UEFI
+Au fur et à mesure du temps, on est assez vite passé du BIOS (32 bits seulement, prise en charge de disques jusqu'à 2.2To, pas de secure boot, pas de fast-boot), au système UEFI (Prise en charge du 32 et 64 bits, de disques allant jusqu'à 9.4Zo, prise en charge du secure boot et un démarrage plus rapide), les différences notables étant la façon dont est stocké celui-ci, le BIOS est dans une ROM tandis qu'un UEFI est dans une mémoire flash (ce qui permet de le metrte à jour bien plus facilement qu'avec un BIOS classique).
+L'UEFI est adopté par les grandes marques de cartes-mères depuis 2006 (19 ans déjà !).
+
+Et comme ces deux systèmes sont assez différents dans leur fonctionnement, il nous faut plusieurs moyens de booter en fonction de la génération de l'UEFI ou du BIOS.
+Par exemple ici (code au dessus), pour booter sur un BIOS, on doit fournir le fichier **undionly.kpxe**, en revanche pour l'UEFI ce sera toujours **ipxe.efi** (et ici, on ne voit souvent ce fichier car je l'ai assigné à chaque architecture ou il est présent soit *UEFI-32* et *UEFI-64*, *Legacy* étant une architecture classique d'un BIOS ou son code est noté *00000*).
+***
+Une fois le DHCP configuré et FOG installé, plus besoin de toucher aux fichiers de configuration, il faut maintenant passer sur l'interface graphique.
+
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/2025-01-13_10-52.png" alt="Menu principal de FOG : Montrant le tableau de bord." position="center" style="border-radius: 8px;" caption="Tableau de bord de FOG" captionPosition="right" captionStyle="color: black;">}}
+***
+On peut désormais capturer une machine depuis cette interface, celà nous donne ces images (ce sont des photos) :
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_1.jpg" alt="Première phase de capture" position="center" style="border-radius: 8px;" caption="Calcul de la taille de l'image." captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_2.jpg" alt="Seconde phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la partition *FAT32* du périphérique hôte" captionPosition="right" captionStyle="color: black;">}}|
 |-|-|
 
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_3.jpg" alt="Troisième phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la seconde partition" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/FOG/Capture-FOG_4.jpg" alt="Dernière phase de la capture" position="center" style="border-radius: 8px;" caption="Capture de la partition principale en *NTFS* (512Go)" captionPosition="right" captionStyle="color: black;">}}|
+|-|-|
+
+La restoration des images sont les mêmes écrans qu'en haut, même interface.
 ***
-|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_3';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io'">Retour à l'accueil</button>|
+Ce TP est donc **terminé**
+***
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_3';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_5';">Suivant</button>|
 |-|-|
