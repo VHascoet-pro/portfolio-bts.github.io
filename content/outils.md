@@ -74,9 +74,9 @@ Antivirus :
 
 - [GitHub](https://github.com)
 
-- Gnome Builder
+- [Gnome Builder](https://apps.gnome.org/fr/Builder/)
 
-- Sublime text
+- [Sublime text](https://www.sublimetext.com)
 
 - VI
     - VIM (VI Improved)
