@@ -91,9 +91,7 @@ Une fois les Flip cards placées (4 au dessus, une autre en dessous pour la seul
 |-|
 
 Ensuite, pour terminer l'agencement de la page, j'ai ajouté une diapositive d'images pour la visite de l'établissement le jour **J** (Les images étant de trop grande taille et dans le mauvais format, j'y ais fait un GIF de la version terminée).
-
-|![GIF Visite de l'IUT](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/slider_JPO.gif)|
-|-|
+![GIF Visite de l'IUT](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/slider_JPO.gif)
 
 Maintenant que l'agencement de la page complête est terminée, j'ai plus qu'à ajouter le fond d'écran, j'y ais fait un dégradé blanc -> rose avec cette variante de rose (personnellement j'aurais fait une version beaucoup plus sobre donc <mark><u>**blanche**</u></mark> mais il s'agissait de la décision de la chargée de communication qui était à la tête du projet).
 Voici les code couleur utilisés pour la page :
@@ -105,7 +103,7 @@ Voici les code couleur utilisés pour la page :
 
 Maintenant que la page est en couleur, voici le logo que j'ai ajouté tout en haut de la page : ![Logo IUT](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_logo.png)
 
->[!NOTE] Ceci est un *placeholder* pour mon framework.
+La mission est donc terminée.
 ***
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_4';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io'">Retour à l'accueil</button>|
 |-|-|
