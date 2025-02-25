@@ -62,6 +62,11 @@ Pour conçevoir la page WEB, je me suis muni de deux documents, le premier (en h
 |{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_proto1.png" alt="" position="center" style="border-radius: 8px;" caption="Prototype du Design / Page 1" captionPosition="right" captionStyle="color: black;" height="640" width="240">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_proto2.png" alt="" position="center" style="border-radius: 8px;" caption="Prototype de design / Page 2" captionPosition="right" captionStyle="color: black;" height="640" width="240">}}|
 |-|-|
 
+En suivant scrupuleusement le prototype papier, j'ai utilisé les modules suivant afin de conçevoir la page.
+
+J'ai utilisé comme base les photos que l'on m'à fourni dans un zip, les voici :
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_banner.png" alt="" position="center" style="border-radius: 8px;" caption="Bannière des portes ouvertes" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_planmod.png" alt="" position="center" style="border-radius: 8px;" caption="Plan de l'IUT sans légende" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_planning.PNG" alt="" position="center" style="border-radius: 8px;" caption="Planning des conférences lors de la journée portes ouvertes" captionPosition="right" captionStyle="color: black;">}}|
+|-|-|-|
 ***
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_4';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io'">Retour à l'accueil</button>|
 |-|-|
