@@ -65,8 +65,47 @@ Pour conçevoir la page WEB, je me suis muni de deux documents, le premier (en h
 En suivant scrupuleusement le prototype papier, j'ai utilisé les modules suivant afin de conçevoir la page.
 
 J'ai utilisé comme base les photos que l'on m'à fourni dans un zip, les voici :
-|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_banner.png" alt="" position="center" style="border-radius: 8px;" caption="Bannière des portes ouvertes" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_planmod.png" alt="" position="center" style="border-radius: 8px;" caption="Plan de l'IUT sans légende" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_planning.PNG" alt="" position="center" style="border-radius: 8px;" caption="Planning des conférences lors de la journée portes ouvertes" captionPosition="right" captionStyle="color: black;">}}|
-|-|-|-|
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_banner.png" alt="" position="center" style="border-radius: 8px;" caption="Bannière des portes ouvertes" captionPosition="right" captionStyle="color: black;">}}|
+|-|
+
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_planmod.png" alt="" position="center" style="border-radius: 8px;" caption="Plan de l'IUT sans légende" captionPosition="right" captionStyle="color: black;">}}|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_planning.png" alt="" position="center" style="border-radius: 8px;" caption="Planning des conférences lors de la journée portes ouvertes" captionPosition="right" captionStyle="color: black;">}}|
+|-|-|
+
+J'ai installé le plugin Elementor et Elementor Pro (achat) afin de pouvoir construire ma page.
+J'ai également utilisé le plugin Boldgrid WPBackup afin d'effectuer des sauvegardes incrémentailes du site.
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/cap_WP-newpage-elementor-6.png" alt="" position="center" style="border-radius: 8px;" caption="" captionPosition="right" captionStyle="color: black;">}}|
+|-|
+
+Une fois le plan placé dans la page, j'ai utilisé le module Hotspots afin d'ajouter des points interactifs sur le plan de l'IUT.
+[![Image des Hotspots](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/cap_WP-hotspot-7.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/cap_WP-hotspot-7.png)
+
+Quand le module est appelé et que l'on ne précise aucune image, il se passe ceci : [![Photo des hotspots](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/cap_WP-hotspotmap1-8.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/cap_WP-hotspotmap1-8.png)
+
+Après avoir ajouté la photo du plan, les hotspots, aligné leur coordonnées sur le plan. Voici le résultat (issu de la page finale, d'oû l'arriere-plan rose) : [![Photo du plan terminé](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/cap_WP-hotspotmap_finished-11.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/cap_WP-hotspotmap_finished-11.png)
+
+
+Par la suite, j'ai ajouté un système de bannières composé de cinq "Flip Cards" ([![Flip Cards Vides](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/cap_WP-ngrid_4rows-14.png)](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/cap_WP-ngrid_4rows-14.png)) afin d'y ajouter les formations.
+Une fois les Flip cards placées (4 au dessus, une autre en dessous pour la seule Licence Pro, afin de les séparer et que ce soit suffisement visible sans y mettre un encart séparé).
+
+|{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_flipcard-Finished.png" alt="" position="center" style="border-radius: 8px;" caption="" captionPosition="right" captionStyle="color: black;">}}|
+|-|
+
+Ensuite, pour terminer l'agencement de la page, j'ai ajouté une diapositive d'images pour la visite de l'établissement le jour **J** (Les images étant de trop grande taille et dans le mauvais format, j'y ais fait un GIF de la version terminée).
+
+|![GIF Visite de l'IUT](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/slider_JPO.gif)|
+|-|
+
+Maintenant que l'agencement de la page complête est terminée, j'ai plus qu'à ajouter le fond d'écran, j'y ais fait un dégradé blanc -> rose avec cette variante de rose (personnellement j'aurais fait une version beaucoup plus sobre donc <mark><u>**blanche**</u></mark> mais il s'agissait de la décision de la chargée de communication qui était à la tête du projet).
+Voici les code couleur utilisés pour la page :
+- Vert : #E0F336
+- Bleu JPO : #ABF8E7
+- Bleu Marine : #4D4794
+- Second bleu utilisé : #008BC8
+- Rose : #FF9AFF
+
+Maintenant que la page est en couleur, voici le logo que j'ai ajouté tout en haut de la page : ![Logo IUT](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS2/JPO/WP-conception/JPO_logo.png)
+
+>[!NOTE] Ceci est un *placeholder* pour mon framework.
 ***
 |<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds2/rds2_4';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io'">Retour à l'accueil</button>|
 |-|-|
