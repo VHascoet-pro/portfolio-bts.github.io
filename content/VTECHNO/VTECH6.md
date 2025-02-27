@@ -9,9 +9,9 @@ En effet, à cause des avancées en technologie à cette époque, on ne pouvait 
 
 Le but premier étant de se démarquer des autres en créant le moteur "le plus beau", "le plus réaliste", avec "la physique la plus réaliste au monde".
 
-Les 4 moteurs cités ci-dessus ont été tellement innovants et ayant une aproche du réalisme et de la puissance tellement différente (offrant une concurrence et une diversité d'approche très accrue) que même aujourd'hui, on y retrouve du code commun à ces moteurs dans des logiciels professionnels dans leurs dernières versions (Dasault Solidworks, suite de logiciels Autodesk, Houdini).
+Les 4 moteurs cités ci-dessus ont été tellement innovants et ayant une aproche du réalisme et de la puissance tellement différente (offrant une concurrence et une diversité d'approche très accrue) que même aujourd'hui, on y retrouve du code commun à ces moteurs dans des logiciels professionnels dans leurs dernières versions (Dassault SolidWorks, suite de logiciels Autodesk, Houdini).
 
-Désormais, les moteurs de jeux ont atteint un sommet en termes de performances et d'avancées graphiques que le moteur le plus avancé à ce jour (Unreal Engine 5.5) est utilisé chez Universal Studios et Disney afin de rendre les paysages des fonts verts utilisés en interne dans les studios (lors des tournages par exemple).
+Désormais, les moteurs de jeux ont atteint un sommet en termes de performances et d'avancées graphiques à un tel point que le moteur le plus avancé à ce jour (Unreal Engine 5.5) est utilisé chez Universal Studios, Disney et certaines Universités afin de rendre les paysages des fonts verts utilisés en interne dans les studios (lors des tournages par exemple) et pour l'expérimentation sur d'autres chose que l'audiovisuel mais plus sur de la conception 3D et sur des doubles virtuels.
 
 Mais ils ne sont pas qu'utilisés dans l'audiovisuel (qui à un lien presque direct avec le jeu vidéo, son medium d'origine) mais également dans l'industrie automobile.
 Désormais, ce type de moteurs de jeux sont tellement sophistiqués qu'ils permettent de faire de la simulation de fluides et de rayons (avec la technologie du Ray-Tracing) et ainsi, faciliter la création de Doubles Virtuels.

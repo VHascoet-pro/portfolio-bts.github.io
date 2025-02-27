@@ -87,7 +87,7 @@ subnet 172.168.1.0 netmask 255.255.55.0{
 }
 {{</code>}}
 #### Spécificité des BIOS/UEFI
-Au fur et à mesure du temps, on est assez vite passé du BIOS (32 bits seulement, prise en charge de disques jusqu'à 2.2To, pas de secure boot, pas de fast-boot), au système UEFI (Prise en charge du 32 et 64 bits, de disques allant jusqu'à 9.4Zo, prise en charge du secure boot et un démarrage plus rapide), les différences notables étant la façon dont est stocké celui-ci, le BIOS est dans une ROM tandis qu'un UEFI est dans une mémoire flash (ce qui permet de le metrte à jour bien plus facilement qu'avec un BIOS classique).
+Au fur et à mesure du temps, on est assez vite passé du BIOS (32 bits seulement, prise en charge de disques jusqu'à 2.2To, pas de secure boot, pas de fast-boot), au système UEFI (Prise en charge du 32 et 64 bits, de disques allant jusqu'à 9.4Zo, prise en charge du secure boot et un démarrage plus rapide), les différences notables étant la façon dont est stocké celui-ci, le BIOS est dans une ROM tandis qu'un UEFI est dans une mémoire flash (ce qui permet de le metre à jour bien plus facilement qu'avec un BIOS classique).
 L'UEFI est adopté par les grandes marques de cartes-mères depuis 2006 (19 ans déjà !).
 
 Et comme ces deux systèmes sont assez différents dans leur fonctionnement, il nous faut plusieurs moyens de booter en fonction de la génération de l'UEFI ou du BIOS.
