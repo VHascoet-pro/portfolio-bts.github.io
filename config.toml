@@ -16,11 +16,11 @@ theme = 'terminal'
   url = "/vtechno/VTECH1"
 
 [[menu.main]]
-  name = "Rapport de stage 2024"
+  name = "Rapport d'activités 2024"
   url = "/RDS1/RDS1_1"
 
 [[menu.main]]
-  name = "Rapport de stage 2025"
+  name = "Rapport d'activités 2025"
   url = "/RDS2/RDS2_1"
 
 [[menu.footer]]
