@@ -93,8 +93,8 @@ Antivirus :
 ## Hyperviseurs
 - [Oracle VM Virtualbox](https://www.virtualbox.org)
 - VmWare
-    - ESXi
-    - Workstation
+    - [ESXi](https://www.vmware.com/products/cloud-infrastructure/vsphere)
+    - [Workstation](https://www.vmware.com/products/desktop-hypervisor)
 - [QEMU](https://www.qemu.org)
     - [KVM/Libvirt](https://blog.stephane-robert.info/docs/virtualiser/type1/kvm/) (Kernel Virtual Machine, unique à Linux)
 - [HyperV](https://learn.microsoft.com/fr-fr/windows-server/virtualization/hyper-v/hyper-v-overview) (l'inverse de KVM, unique à Windows)
