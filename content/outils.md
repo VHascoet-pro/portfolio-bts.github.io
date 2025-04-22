@@ -78,50 +78,52 @@ Antivirus :
 
 - [Sublime text](https://www.sublimetext.com)
 
-- VI
-    - VIM (VI Improved)
-    - Helix (Similaire à VIM avec une amélioration au niveau de la QoL)
+- VI (ou inspiré de VI)
+    - [VIM](https://www.vim.org) (VI Improved)
+    - [Helix](https://helix-editor.com) (Similaire à VIM avec une amélioration au niveau de la QoL)
+
+- Non, je n'utiliserai jamais [Emacs](https://www.gnu.org/software/emacs/) mais voici le lien vers cet IDE
 
 ## Outils réseau
-- Cisco Packet Tracer
-- Wireshark
-- OpenVPN
-- Metasploit
+- [Cisco Packet Tracer](https://www.netacad.com/fr/cisco-packet-tracer)
+- [Wireshark](https://www.wireshark.org)
+- [OpenVPN](https://openvpn.net)
+- [Metasploit](https://www.metasploit.com)
 
 ## Hyperviseurs
-- Virtualbox
+- [Oracle VM Virtualbox](https://www.virtualbox.org)
 - VmWare
     - ESXi
     - Workstation
-- QEMU
-    - KVM/Libvirt (Kernel Virtual Machine, unique à Linux)
-- HyperV (l'inverse de KVM, unique à Windows)
+- [QEMU](https://www.qemu.org)
+    - [KVM/Libvirt](https://blog.stephane-robert.info/docs/virtualiser/type1/kvm/) (Kernel Virtual Machine, unique à Linux)
+- [HyperV](https://learn.microsoft.com/fr-fr/windows-server/virtualization/hyper-v/hyper-v-overview) (l'inverse de KVM, unique à Windows)
 
 ## Navigateurs
-- Vivaldi (Basé sur Chromium, fournit une suite d'analyse du traffic très complête. *Adapté pour les développeurs Web front-end*)
-- Firefox (Indépendant de Chromium)
+- [Vivaldi](https://vivaldi.com/fr/) (Basé sur Chromium, fournit une suite d'analyse du traffic très complête. *Adapté pour les développeurs Web front-end*)
+- [Firefox](https://www.mozilla.org/fr/firefox/new/) (Indépendant de Chromium)
 *J'essaie de ne jamais utiliser de navigateurs utilisant Chromium comme base, Vivaldi étant très versatile et libre, c'est ma seule exception*.
 
 # Outils Divers (pour mes projets personnels)
 ## Montage
-- Audacity (Audio splicer)
-- GoldWave (Audio splicer)
-
-- KDEnlive (Montage Video)
-- Lightworks (Montage Vidéo)
-
-- Houdini (Modélisation 3D et Simulations de physique pour des Animations / Jeux etc...)
+- [Audacity](https://www.audacityteam.org) (Audio splicer)
+- [GoldWave](https://www.goldwave.com) (Audio splicer)
+<br><br>
+- [KDEnlive](https://kdenlive.org/fr/) (Montage Video)
+- [Lightworks](https://lwks.com) (Montage Vidéo)
+<br><br>
+- [Houdini](https://www.sidefx.com) (Modélisation 3D et Simulations de physique pour des Animations / Jeux etc...)
 
 ## Composition
 - Trackers :
-    - FastTracker II
-    - OpenMPT
-    - Renoise
+    - [FastTracker II](https://www.pouet.net/prod.php?which=13350)
+    - [OpenMPT](https://openmpt.org)
+    - [Renoise](https://www.renoise.com)
 
 DAWs (Digital Audio Workstation) :
-    - Ableton
+    - [Ableton](https://www.ableton.com/en/)
 
 ## Game Dev et Level Design
-- Unreal Engine 3 et 4 (Epic Games)
-- GoldSrc et Source² (VALVE)
-- Autodesk Stingrey (juste pour essayer avant la fermeture des serveurs)
+- [Unreal Engine](https://www.unrealengine.com/fr) 3 et 4 (Epic Games)
+- [GoldSrc](https://developer.valvesoftware.com/wiki/GoldSrc) et [Source](https://developer.valvesoftware.com/wiki/Source) (VALVE)
+- [Autodesk Stingrey](https://www.youtube.com/results?search_query=autodesk+stingray+game+engine) (juste pour essayer avant la fermeture des serveurs)
