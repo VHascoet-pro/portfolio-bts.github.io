@@ -1,94 +1,71 @@
 ---
-title: "Rapport Partie 2"
+title: "Premier Labo"
 ---
- Pendant toute la semaine, on à mis en place (Moi et mon maître de stage) un second labo, se basant sur le travail effectué pour l'ancien (le serveur LABANNU va donc être réutilisé).
+***
+Lors de la première partie de la semaine on m'à alloué une salle afin que je puisse faire mes Travaux Pratiques J'ai donc commencé la mise en place de mon premier labo, le même que celui que nous avions commencé au lycée : Le laboratoire GSB.
 
-Le but du labo est de conçevoir une <u>**Liaison inter-site**</u> entre le site de Quimper et celui de Vannes afin que les clients du site de Vannes puissent se connecter sur le serveur de Quimper. Simulant ainsi le réseau actuel de la Chambre des Métiers.
+Il se composait de ceci :
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/Schema_Labo1.jpg" alt="sch_gsb" position="center" style="border-radius: 8px;" caption="Schéma du Laboratoire GSB (allegé pour cause de manque de temps à l'entreprise)" captionPosition="left" captionStyle="color: black;" >}}
 
-## Description du réseau
+Le plan d'adressage était le suivant :
 
-<u>Le premier site :</u> Celui de Quimper, doit avoir le serveur LABANNU, il s'agit d'un serveur Active Directory permettant de délivrer le domaine GSB.local, comme le serveur fait partie du site de Quimper, je lui ait attribué un VLAN, le VLAN 10.
-
-Le second site : Celui de Vannes, doit contenir deux parties, la première contient ces serveurs:
-- Un serveur AD DS RODC (ou Read Only Domain Controller) permettant de se lier à l'Active Directory LABANNU dans le site de Quimper.
-- Un second serveur AD DS qui servira d'Active Directory dédié au site de Vannes.
-
-Pour cette partie du site, j'ai attribué le **VLAN 30** afin de séparer virtuellement les serveurs des clients.
-
-La seconde partie du site servira aux clients de Vannes, je lui ait attribué le **VLAN 40** afin de séparer virtuellement les clients des serveurs.
-
-Chaque site doit être relié par un pare-feu sous pfSense (pour tester les configurations et simplifier la msie en oeuvre, aucune règle de filtrage ne sera mise en place).
-
-En voici le schéma :
-
-{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/Schema_Labo2.png" alt="sch_lab2" position="center" style="border-radius: 8px;" caption="Schéma du Labo 2" captionPosition="left" captionStyle="color: black;">}}
-
-Voici également la topologie réseau :
-|Nom de la machine|Type|VLAN|N° de Site|Adresse IP|Adresse Réseau|
+|Nom de la machine|VLAN|@IP de la machine|@Réseau (CIDR EN /24)|Rôle|Nom VSwitch|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|pfQuimper **->** LABANNU|Pare-Feu|10|1|10.1.10.254||
-|pfQuimper **->** Clients Quimper|Pare-Feu|15|1|10.1.15.254|10.1.15.0|
-|pfQuimper **->** Clients Vannes|Pare-Feu|16|1|10.1.16.254|10.1.16.0|
-|pfQuimper **->** pfVannes|Pare-Feu|60|1|192.168.1.254||
-|pfVannes **->** pfQuimper|Pare-Feu|60|2|192.168.1.253|192.168.1.0|
-|pfVannes **->** Serveurs|Pare-Feu|30|2|10.2.30.254|10.20.30.0|
-|pfVannes **->** Clients Vannes|Pare-Feu|40|2|10.2.40.254|10.2.40.0|
-||
-|AD RODC|Serveur|30|2|10.2.30.253||
-|AD DS|Serveur|30|2|10.2.30.252||
-|LABANNU|Serveur|10|1|10.1.10.253|10.1.10.0|
-||
-|Client 1|PC|40|2|10.2.40.1||
-|Client 2|PC|40|2|10.2.40.2||
-||
-|ESXI Quimper|Serveur|100|5|10.5.100.10|10.5.100.0|
-|Switch Quimper|Switch|100|5|10.5.100.20||
-||
-|ESXI Vannes|Serveur|100|5|10.5.100.100||
-|Switch Vannes|Switch|100|5|10.5.100.200||
+|LABANNU|10|10.1.10.253|10.1.10.0|Active Directory|SW_SIO1.1||
+|REZOLAB|10|10.1.10.252|10.1.10.0|Serveur DHCP|SW_SIO1.1|
+|WEBVISLAB|10|10.1.10.251|10.1.10.0|Serveur WEB|SW_SIO1.1|
+||||||
+|Routeur côté VLAN 10|10|10.1.10.254|10.1.10.0|Routeur Logiciel|RT|
+|Routeur côté VLAN 20|20|10.1.20.254|10.1.20.0|Routeur Logiciel|RT|
+||||||
+|Clients|20|10.1.20.xxx (DHCP)|10.1.20.0|Clients|LAB1.1|
+||||||
+|Switch|1|x.x.x.x|x.x.x.x|||
+
+|NOM|SYSTÈME D'EXPLOITATION|VIRTUALISÉ ?|
+|:---:|:---:|:---:|
+|LABANNU|Windows Server 2019|OUI|
+|REZOLAB|Ubuntu Server 24.04|OUI|
+|WEBVISLAB|Ubuntu Server 24.04|OUI|
+|ROUTEUR LOGICIEL|Ubuntu Server 24.04|OUI|
+||||
+|CLIENT 1 (B8)|Pop OS|NON|
+|CLIENT 2 (B8)|Windows 11 Professionnel|OUI|
+|CLIENT 3 (SALLE INFO)|Windows 11 Professionnel|NON|
+
+Ici, ESXI fait rapport au système d'exploitation utilisé afin de virtualiser toutes les machines, ESXI utilise VMware vCenter sur l'hyperviseur Hyper-V.
+
+À l'aide de la fonctionnalité de _Switch Virtuels_ de l'ESXi, j'ai pu installer deux switch virtuels à l'intérieur de celui-ci, le premier switch virtuel (ou VSwitch) était lié à un VLAN, le vlan 60, Le routeur se connectera dessus et le VLAN 20 servira de patte pour aller d'un site à un autre.
+J'ai également créé un second VSwitch lié au VLAN 10, qui sera attaché à LABANNU et au Routeur (pour le site 10 - LABANNU).
+
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/Capture_vswitch.png" alt="cap_vswitch" position="center" style="border-radius: 8px;" caption="Capture de la configuration des VSwitchs" captionPosition="left" captionStyle="color: black;">}}
+
+Ensuite, j'ai commencé la configuration du routeur sur l'ESXi, comme la machine n'est pas connectable à internet (il n'y à qu'une seule interface RJ45 dessus), j'ai téléchargé depuis une autre station le paquet _isc-dhcp-relay_ afin de pouvoir passer le routeur en relai DHCP quand il y en aura besoin.
+
+Durant la seconde partie de la semaine, j'ai terminé la mise en place du routeur Linux afin :
+- De configurer la redirection NAT avec MASQUERADE.
+- D'autoriser la redirection IPv4 afin de rendre le NAT fonctionnel.
+- D'ajouter la table de routage avec des routes statiques (pas de routes dynamiques car il n'y en à pas besoin pour ce labo).
+- D'activer le relai DHCP sur le pare-feu (qui sert ici de routeur) afin de délivrer les baux depuis le serveur LABANNU vers l'autre partie du réseau.
+
+<br>J'ai ensuite testé à l'aide de pings les différentes parties du réseau afin de connaître et de fiabiliser toute ma configuration :
+
+|![capture vlan 10](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/capture_10.png)|![capture vlan 20](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/capture_20.png)|![capture vlan 60](https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/capture_60.png)|
+|:---:|:---:|:---:|
+|Ping vers le réseau situé dans le **VLAN 10**.|Ping vers le réseau situé dans le **VLAN 20**|Ping vers le réseau situé dans le **VLAN 60**|
+
+Une fois le tout verifié, j'ai commencé la configuration du serveur LABANNU :
+
+1. Changement sur nom par défaut (généralement WIN-xxxxxxxx) en LABANNU afin de simplifier la connexion et configuration de services qui vont interagir avec lui.
+2. Le serveur DNS (ajout de zones de recherche directes et inversées nécessaire au bon fonctionnement de l'Active Directory, il est donc conseillé de le configurer en premier).
+3. Le serveur Active Directory ([AD DS](https://learn.microsoft.com/fr-fr/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)) pour pouvoir créer un domaine en (*.local), je l'ai donc nommé **GSB.local** et ajouté celui-ci dans les domaines de recherches du serveur DNS. Le serveur DHCP afin de pouvoir distribuer des baux sur tout le réseau client (côté client, au VLAN 20 donc)
+
+Une fois les adresses attribuées, j'ai commencé à tester la configuration en y mettant un client sur le VLAN 20 (de l'autre côté du Switch donc), comme indiqué ici, je reçois bien le bail DHCP de LABANNU, en y exécutant la commande "**traceroute 10.1.10.253**" sur le client. Je vois bel et bien que je passe par la machine <u>LABANNU.GSB.local</u>, voulant dire que le DNS et l'Active Diretory fonctionne correctement.
+
+{{<figure src="https://vhascoet-pro.github.io/portfolio-bts.github.io/pics/RDS1/capture_ipconfig.png" alt="cap_ipconf" position="center" style="border-radius: 8px;" caption="Capture de l'Active Directory" captionPosition="left" captionStyle="color: black;">}}
+
+Le premier labo est **terminé**
 
 ***
-
-## Matériel requis
-|NOM|O.S.|LOCALISATION|DÉTAILS|
-|:---:|:---:|:---:|:---:|
-|ESXI Quimper|VSphere sous ESXI|Quiper|Hôte du serveur de virtualisation|
-|Switch Quimper|Aruba Switch Manager|Quimper||
-|pfQuimper|pfSense|Quimper|Liaison intersite|
-|||||
-|ESXI Vannes|Vsphere sous ESXI|Vannes|Hôte du second serveur de virtualisation|
-|Switch Vannes|Aruba Switch Manager|Vannes||
-|pfVannes|pfSense|Vannes|Liaison intersite|
-|||||
-|Client|Pop_Os!|Quimper|Administration "distante"|
-
-## Début du Labo
-Une fois cette partie du labo terminé, j'ai entamé la seconde partie.
-Pour la seconde partie, j'ai ajouté physiquement deux nouvelles machines, dans la première, j'ai installé l'ESXi et configuré mes quatre machines virtuelles, les deux premières étant reliées à un vSwitch sur le VLAN 30, se sera les serveurs. Les deux dernières connectées au second vSwitch sur le VLAN 40, se sera les clients.
-
-j'ai par la suite installé le second pfSense sur la deuxième machine physique, ce pfSense à deux interfaces réseaux (que j'ai configuré comme dans l'adressage IP à gauche du canvas).
-
-J'ai ensuite relié les deux pfSense.
-
-Pendant une grosse partie de la 2ème et 3ème semaine, il y à eu beaucoup de problèmes avec le pare-feu virtualisé (pare-feu de Quimper) qui n'arrivait pas à faire sortir son traffic de son vSwitch.
-J'ai donc du faire transiter la machine virtuelle sur une machine dédiée afin d'utiliser l'interface déjà présente.
-
-Une fois le réseau intégralement ré-architecturé, j'ai testé chaque client à chaque partie du réseau, afin d'être sûr de la pérennité de celui-ci dans le temps, pour éviter d'éventuelles pannes ou des erreurs d'inattention dans mes fichiers de configuration (en effectuant des sauvegardes de mes fichiers de configuration et des snapshots de mes machines virtuelles aux moments où je suis sûr que leur configuration est correcte et que je n'ai aucune modification ultérieure à faire dessus).
-
-J'ai ensuite configuré les IP des deux Switch afin de pouvoir facilement les administrer, j'ai fait de même pour les deux ESXi.
-Cinquième et dernière Semaine de Stage
-
-Lors de cette dernière semaine de stage, j'ai mis en place le contrôleur RODC de Vannes pour qu'il puisse communiquer avec LABANNU pour pouvoir devenir un domaine en lecture seule pour pouvoir le faire transiter vers le réseau de Vannes.
-Une fois le contrôleur RODC mis en place, j'ai intégré les clients du VLAN 40 dans celui-ci, après avoir crée des utilisateurs, chacun de mes clients (Windows 7) fonctionnant et arrivant à se connecter au serveur.
-
-Ensuite, j'ai installé le second serveur AD DS afin d'avoir un domaine dédié au réseau de Vannes, essayé la connexion avec l'un des clients du VLAN 40, comme il arrivait à se connecter au domaine correctement, je suis passé à la phase suivante du labo.
-
-Pour la phase suivante du labo, il fallait configurer le VLAN 15 (Clients de Quimper) et 16 (clients de Vannes) sur le Switch du réseau de Quimper, afin d'avoir une partie isolée qui sert aux clients externes pour Quimper et Vannes.
-
-Après avoir connecté mon client Linux physique sur le VLAN 15, j'ai pu connecter mon domaine GSB.local à celui-ci, et j'ai réussi à avoir accès aux dossiers partagés que j'avais configuré sur le domaine de Quimper.
-
-Le labo est finalement **terminé**.
-
-***
-|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_2';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/';">Retour à l'accueil</button>|
+|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_2';">Précédent</button>|<button onclick="window.location.href='https://vhascoet-pro.github.io/portfolio-bts.github.io/rds1/rds1_4';">Suivant</button>|
 |-|-|
