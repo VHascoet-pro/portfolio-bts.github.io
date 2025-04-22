@@ -53,7 +53,7 @@ Pour le chiffrement de documents et la gestion de mes clés :
 
 Pour la gestion de mot de passes :
 - [Dashlane](https://www.dashlane.com/fr) (n'est plus utilisé mais je le mentionne)
-- [Bitwarden](https://bitwarden.com)
+- [Bitwarden](https://bitwarden.com) (Gestionnaire de mot de passe chiffré proposant la création de clés de sécurité pour les comptes google, connexion en 1 clic sur tous les appareils)
 
 Antivirus :
 - [Avast](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
@@ -78,11 +78,11 @@ Antivirus :
 
 - [Sublime text](https://www.sublimetext.com)
 
-- VI (ou inspiré de VI)
+- [VI](https://linux.goffinet.org/administration/traitement-du-texte/editeur-de-texte-vi/) (ou inspiré de VI)
     - [VIM](https://www.vim.org) (VI Improved)
     - [Helix](https://helix-editor.com) (Similaire à VIM avec une amélioration au niveau de la QoL)
 
-- Non, je n'utiliserai jamais [Emacs](https://www.gnu.org/software/emacs/) mais voici le lien vers cet IDE
+- Non, je n'utiliserai jamais [Emacs](https://www.gnu.org/software/emacs/) mais voici tout de même le lien vers cet IDE
 
 ## Outils réseau
 - [Cisco Packet Tracer](https://www.netacad.com/fr/cisco-packet-tracer)
